@@ -1,0 +1,369 @@
+{
+  "title":" What after Intermediate",
+  "streams":
+  [
+    {
+      "Name": "Engineering",
+      "entrance_exams": [
+        {
+          "test_name": "Joint Entrance Examination (JEE) Main",
+          "Purpose": "For Admission in B. E./B. Tech., B. Arch., B. Planning",
+          "Eligibility": "Class 12 pass (PCM)",
+          "Application mode": "Online",
+          "Source": "http://jeemain.nic.in",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": "Through National Entrance Exam"
+        },
+        {
+          "test_name": "JEE Advanced",
+          "Purpose": "Admission in UG programmes in IITs and ISM Dhanbad",
+          "Eligibility": "Class 12 Pass (PCM)",
+          "Application mode": "Online",
+          "Source": "http://jeeadv.iitd.ac.in/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": "Through National Entrance Exam"
+        },
+        {
+          "test_name": "BITSAT",
+          "Purpose": "Admission in Integrated First Degree programmes in BITS Pilani, Goa & Hyderabad campuses.",
+          "Eligibility": "Class 12 pass (PCM)",
+          "Application mode": "Online",
+          "Source": "www.bitsadmission.com/",
+          "Conducted By ": "BITS Pilani",
+          "Application Invited For": "Integrated Degree Programmes",
+          "Notification Month": "Feb / March",
+          "Mode of Selection": "Through National Entrance Exam"
+        },
+        {
+          "test_name": "VIT University Engineering Entrance Exam (VITEEE)",
+          "Purpose": "Admission in B Tech Courses",
+          "Eligibility": "Class 12",
+          "Application mode": "Online, By Post",
+          "Source": "www.vit.ac.in",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "COMED-K",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "https://www.comedk.org/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "IPU-CET (B. Tech)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "www.ipu.ac.in",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "Manipal (B. Tech)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "www.admissions.manipal.edu",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "AMU (B. Tech)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://www.amucontrollerexams.com/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "NDA Entrance with PCM (MPC)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://careerairforce.nic.in",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "All India Engineering Entrance Exam with PCM (MPC)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://www.jeemain.nic.in",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "State Level Engineering Entrance Exams(APEAMCET)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://www..ap.gov.in/eamcet",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        }
+      ]
+    },
+    {
+      "Name": "Medical",
+      "entrance_exams": [
+        {
+          "test_name": "National Eligibility Cum Entrance Test (NEET)",
+          "Purpose": "Admission to MBBS / BDS",
+          "Eligibility": "Class 12 (PCB)",
+          "Application mode": "Online",
+          "Source": "http://aipmt.nic.in/aipmt/Welcome.aspx",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "AIIMS",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://aiimsexams.org/",
+          "Conducted By ": "All India Institute of Medical Sciences",
+          "Application Invited For": "MBBS",
+          "Notification Month": "Feb / March",
+          "Mode of Selection": "Through National Entrance Exam"
+        },
+        {
+          "test_name": "CMC-Vellore",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://admissions.cmcvellore.ac.in/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "CMC-Ludhiana",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://cmcludhiana.in/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "COMED-K",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "https://www.comedk.org/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "JIPMER",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "http://jipmer.edu.in/",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "Manipal (MBBS)",
+          "Purpose": "",
+          "Eligibility": "",
+          "Application mode": "",
+          "Source": "www.admissions.manipal.edu",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        }
+      ]
+    },
+    {
+      "Name": "Marine, Navy, Defence",
+      "entrance_exams": [
+        {
+          "test_name": "Indian Maritime University Common Entrance Test",
+          "Purpose": "Admission in Diploma in Nautical Science (DNS) leading to BSc. (Nautical Science)",
+          "Eligibility": "Class 12 (PCM)",
+          "Application mode": "By Post",
+          "Source": "www.imu.edu.in/index.php",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "Indian Navy B.Tech Entry Scheme",
+          "Purpose": "Admission in Indian Navy B.Tech course",
+          "Eligibility": "Class 12 passed",
+          "Application mode": "Online",
+          "Source": "www.nausena-bharti.nic.in/index.php",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "Indian Navy Sailors Recruitment",
+          "Purpose": "Admission in 24 weeks Basic training at INS Chilka followed by Professional training",
+          "Eligibility": "Class 12 (Maths and Physics/Chem./Bio/Computer Sc.)",
+          "Application mode": "Online, By Post",
+          "Source": "www.nausena-bharti.nic.in/index.php",
+          "Conducted By ": "",
+          "Application Invited For": "",
+          "Notification Month": "",
+          "Mode of Selection": ""
+        },
+        {
+          "test_name": "Defence Indian Army Technical Entry Scheme (TES)",
+          "Purpose" :"Technical Entry to Army",
+          "Eligibility": "Class 12 PCM",
+          "Application mode" : "Online",
+          "Source" : "www.joinindianarmy.nic.in/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        },
+        {
+          "test_name": "National Defence Academy and Naval Academy Examination (I)",
+          "Purpose" :"Admission to Army and Air Force wings of NDA and 4 years B. Tech course for the Indian Naval Academy Course (INAC)",
+          "Eligibility": "Class 12, 12 Passed",
+          "Application mode" : "Online",
+          "Source" : "www.upsc.gov.in/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        }
+      ]
+    },
+    {
+      "Name": "Law",
+      "entrance_exams":
+      [
+        {
+          "test_name": "Common Law Admission Test",
+          "Purpose" :"Admission in B.A. LL.B (Hons), B.Com. (Hons), BBA LL.B (Hons)",
+          "Eligibility": "Class 12, 12+",
+          "Application mode" : "Online, By Post",
+          "Source" : "http://clat.ac.in/",
+          "Conducted By ":"Chanakya Law University",
+          "Application Invited For":"Undergraduate Law Programmes",
+          "Notification Month":"Feb / March",
+          "Mode of Selection":"Through National Entrance Exam"
+        },
+        {
+          "test_name": "Law School Admission Test LSAT India",
+          "Purpose" :"Admission in B.A. LL.B (Hons), B.Com. (Hons), BBA LL.B (Hons)",
+          "Eligibility": "Class 12, Graduates",
+          "Application mode" : "Online",
+          "Source" : "www.pearsonvueindia.com/lsatindia/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        },
+        {
+          "test_name": "All India Law Entrance Test (AILET)",
+          "Purpose" :"Admission in B.A., LL.B. (Hons.), LLM, PhD",
+          "Eligibility": "Class 12, 12+, LLB, LLM",
+          "Application mode" : "Online, By Post",
+          "Source" : "www.nludelhi.ac.in/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        },
+        {
+          "test_name": "Lloyd Entrance Test (LET)",
+          "Purpose" :"Admission in B.A.,LL.B- 5-year integrated course",
+          "Eligibility": "Class 12, 12+",
+          "Application mode" : "Online, By Post",
+          "Source" : "www.lloydlawcollege.com",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        }
+      ]
+    },
+    {
+      "Name": "Agriculture & Hotel Management",
+      "entrance_exams":
+      [
+        {
+          "test_name": "Indian Council of Agricultural Research ICAR AIEEA-UG-PG",
+          "Purpose" :"Admission in Bachelor, Master Degree Program, SRF (PGS) to Pursuing Ph.D in Agriculture and Allied Sciences at Agricultural Universities",
+          "Eligibility": "Class 12, UG, PG",
+          "Application mode" : "Online",
+          "Source" : "www.icar.org.in/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        },
+        {
+          "test_name": "All India Hotel management Entrance Exam NCHMCT JEE",
+          "Purpose" :"Admission in B.Sc. Hospitality & Hotel Administration",
+          "Eligibility": "Class 12",
+          "Application mode" : "Online",
+          "Source" : "www.nchmct.org/",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"",
+          "Mode of Selection":""
+        }
+      ]
+    },
+    {
+      "Name": "Fashion Design",
+      "entrance_exams":
+      [
+        {
+          "test_name": "All India Entrance Examination for Design (AIEED)",
+          "Purpose" :"Admission in 4 years UG level programmes in Design",
+          "Eligibility": "Class 11, 12",
+          "Application mode" : "Online",
+          "Source" : "www.aieed.com",
+          "Conducted By ":"",
+          "Application Invited For":"",
+          "Notification Month":"Series 1: November to February,\nSeries 2: April, May",
+          "Mode of Selection":""
+        }
+      ]
+    }
+  ]
+}
