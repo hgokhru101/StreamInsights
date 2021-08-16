@@ -19,4 +19,15 @@ class TalentTestClass{
     var webiste:String = ""
 }
 
-
+class Afterten{
+    @SerializedName("name")
+    var name :String = ""
+    @SerializedName("duration")
+    var duration :String = ""
+}
+class Aftertencourse{
+    @SerializedName("name")
+    var name : String = ""
+    @SerializedName("sub_course")
+    var sub_course : ArrayList<String> = ArrayList()
+}

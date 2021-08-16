@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             jsonString,
             TalentTestListClass::class.java
         )
+        val AfterTenModel = gson.fromJson(
+            getJSONFromAssets1(this),
+            AfterTenListClass::class.java
+        )
         Log.d("Main Activity","Size:")
     }
 
@@ -30,6 +34,21 @@ class MainActivity : AppCompatActivity() {
         var json: String? = null
         try {
             val myUsersJSONFile = assets.open("talent_test.json")
+            val size = myUsersJSONFile.available()
+            val buffer = ByteArray(size)
+            myUsersJSONFile.read(buffer)
+            myUsersJSONFile.close()
+            json = String(buffer)
+        } catch (ex: IOException) {
+            ex.printStackTrace()
+            return null
+        }
+        return json
+    }
+    private fun getJSONFromAssets1(context: Context): String? {
+        var json: String? = null
+        try {
+            val myUsersJSONFile = assets.open("After10th.json")
             val size = myUsersJSONFile.available()
             val buffer = ByteArray(size)
             myUsersJSONFile.read(buffer)

@@ -2,20 +2,37 @@
     "title": "What Next After intermediate",
     "streams": [
         {
-            "student_type": "Engineering Students",
-            "future_options": ["M.Tech","MBA","Job"]
-        },
-        {
-            "student_type": "Medical Students",
-            "future_options": ["MS","Practice","MD","Job"]
-        },
-        {
-            "student_type": "BA Students",
-            "future_options": ["MA","BEd","MBA","LLB","PhD","Job"]
-        },
-        {
-            "student_type": "B.Sc Students",
-            "future_options": ["MSC","BEd","LLB","PhD","Job"]
+            "name": "Engineering",
+            "duration": "4 years",
+            "eligible": "MPC",
+            "course": [
+                {
+                    "degree_name": "BE/B.Tech",
+                    "course_duration": "4 years",
+                    "type": "Engineering",
+                    "sub_course": [
+                        "CSE",
+                        "IT",
+                        "ECE",
+                        "EEE",
+                        "Civil Eng",
+                        "Mechnical Eng",
+                        "Chemical Eng",
+                        "Aeronautical Eng",
+                        "Aerospace Eng",
+                        "Agricultural Eng",
+                        "Automobile Eng",
+                        "Bio-medical Eng",
+                        "Bio-technology Eng",
+                        "Ceramic Eng",
+                        "Industrial Eng",
+                        "Environmental Eng",
+                        "Marine Eng",
+                        "Mining Eng",
+                        "Silk & Textile Eng"
+                    ]
+                }
+            ]
         },
         {
             "name": "Medical",
