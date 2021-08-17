@@ -1,45 +1,107 @@
 {
-    "title": "What Next After intermediate",
-    "streams": [
+    "data": [
         {
-            "student_type": "Engineering Students",
-            "future_options": ["M.Tech","MBA","Job"]
-        },
-        {
-            "student_type": "Medical Students",
-            "future_options": ["MS","Practice","MD","Job"]
-        },
-        {
-            "student_type": "BA Students",
-            "future_options": ["MA","BEd","MBA","LLB","PhD","Job"]
-        },
-        {
-            "student_type": "B.Sc Students",
-            "future_options": ["MSC","BEd","LLB","PhD","Job"]
-        },
-        {
-            "student_type": "B.Com Students",
-            "future_options": ["M.Com","MBA","LLB","PhD","Job"]
-        },
-        {
-            "student_type": "LLB Students",
-            "future_options": ["DTL","DLL","LLM","Job"]
-        },
-        {
-            "student_type": "BCA Students",
-            "future_options": ["MCA","MBA","MSc.comp","PhD","Job"]
-        },
-        {
-            "student_type": "BBA/BBM Students",
-            "future_options": ["MBA","PhD","Job"]
-        },
-        {
-            "student_type": "Teaching Students",
-            "future_options": ["M.Ed","BEd/B.PEd","PhD","Job"]
-        },
-        {
-            "student_type": "Other Students",
-            "future_options": ["MA","MS public rel","MSc","MLIC","LLM","MBA","MCA","M.Com","Job"]
-        }    
+            "title": "What Next After intermediate",
+            "streams": [
+                {
+                    "student_type": "Engineering Students",
+                    "future_options": [
+                        "M.Tech",
+                        "MBA",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "Medical Students",
+                    "future_options": [
+                        "MS",
+                        "Practice",
+                        "MD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "BA Students",
+                    "future_options": [
+                        "MA",
+                        "BEd",
+                        "MBA",
+                        "LLB",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "B.Sc Students",
+                    "future_options": [
+                        "MSC",
+                        "BEd",
+                        "LLB",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "B.Com Students",
+                    "future_options": [
+                        "M.Com",
+                        "MBA",
+                        "LLB",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "LLB Students",
+                    "future_options": [
+                        "DTL",
+                        "DLL",
+                        "LLM",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "BCA Students",
+                    "future_options": [
+                        "MCA",
+                        "MBA",
+                        "MSc.comp",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "BBA/BBM Students",
+                    "future_options": [
+                        "MBA",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "Teaching Students",
+                    "future_options": [
+                        "M.Ed",
+                        "BEd/B.PEd",
+                        "PhD",
+                        "Job"
+                    ]
+                },
+                {
+                    "student_type": "Other Students",
+                    "future_options": [
+                        "MA",
+                        "MS public rel",
+                        "MSc",
+                        "MLIC",
+                        "LLM",
+                        "MBA",
+                        "MCA",
+                        "M.Com",
+                        "Job"
+                    ]
+                }
+            ]
+        }
     ]
 }

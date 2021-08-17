@@ -1,321 +1,325 @@
 {
-    "title": "What Next After 10th Class",
-    "streams": [
+    "data": [
         {
-            "name": "Intermediate",
-            "duration": "2 years",
-            "course": [
+            "title": "What Next After 10th Class",
+            "streams": [
                 {
-                    "name": "Science",
-                    "sub_course": [
-                        "MPC",
-                        "BIPC",
-                        "Library Science"
+                    "name": "Intermediate",
+                    "duration": "2 years",
+                    "course": [
+                        {
+                            "name": "Science",
+                            "sub_course": [
+                                "MPC",
+                                "BIPC",
+                                "Library Science"
+                            ]
+                        },
+                        {
+                            "name": "Commerce",
+                            "sub_course": [
+                                "CEC"
+                            ]
+                        },
+                        {
+                            "name": "Arts",
+                            "sub_course": [
+                                "MEC",
+                                "HEC"
+                            ]
+                        }
+                    ],
+                    "examination": []
+                },
+                {
+                    "name": "Polytechnic",
+                    "duration": "3 years",
+                    "course": [
+                        {
+                            "name": "Mechanical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Computer Science",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Civil",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "EEE",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "IT",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Automobile",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Electronics and Communication",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Bio-Technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Electrical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Chemical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Aeronautical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Agriculture",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Architecture",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Bio-Medical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Marine technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Mining technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Leather technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Textile technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Petroleum technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Plastic technology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Rubber technology",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": [
+                        {
+                            "exam_name": "APRJC",
+                            "website": "www.aprs.cgg.gov.in",
+                            "purpose": "",
+                            "eligibility": "",
+                            "application_mode": ""
+                        },
+                        {
+                            "exam_name": "Polytechnic Entrance",
+                            "website": "www.appolitechnic.nic",
+                            "purpose": "",
+                            "eligibility": "",
+                            "application_mode": ""
+                        }
                     ]
                 },
                 {
-                    "name": "Commerce",
-                    "sub_course": [
-                        "CEC"
-                    ]
+                    "name": "IIIT",
+                    "duration": "",
+                    "course": [],
+                    "examination": []
                 },
                 {
-                    "name": "Arts",
-                    "sub_course": [
-                        "MEC",
-                        "HEC"
-                    ]
-                }
-            ],
-            "examination": []
-        },
-        {
-            "name": "Polytechnic",
-            "duration": "3 years",
-            "course": [
-                {
-                    "name": "Mechanical",
-                    "sub_course": []
+                    "name": "ITI",
+                    "duration": "2 years",
+                    "course": [
+                        {
+                            "name": "Fitter",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Civil(Draughtman)",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Mechanical",
+                            "sub_course": [
+                                "Radio & TV",
+                                "Motor vechicle",
+                                "Diesel",
+                                "Marine"
+                            ]
+                        },
+                        {
+                            "name": "Electrican &",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Plumber",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Surveyor",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Electrical",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Machine tools",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Welder",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Firemen",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Cookery",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Paint Technology",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": []
                 },
                 {
-                    "name": "Computer Science",
-                    "sub_course": []
+                    "name": "Paramedical",
+                    "duration": "3 years",
+                    "course": [
+                        {
+                            "name": "DLMT",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "DHFM",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "DOA",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "DOT",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Health Inspector",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Sanitary Inspector",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": []
                 },
                 {
-                    "name": "Civil",
-                    "sub_course": []
+                    "name": "Short Term Courses",
+                    "duration": "6 months/1 year",
+                    "course": [
+                        {
+                            "name": "DTP",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "PGDCA",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Tally",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Internet",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Graphics",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Animation",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Web Designing",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Cyber security",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": []
                 },
                 {
-                    "name": "EEE",
-                    "sub_course": []
+                    "name": "Others",
+                    "duration": "",
+                    "course": [
+                        {
+                            "name": "Beauty & Cosmetology",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Jewelry Designing",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Fashion Designing",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Photography",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": []
                 },
                 {
-                    "name": "IT",
-                    "sub_course": []
-                },
-                {
-                    "name": "Automobile",
-                    "sub_course": []
-                },
-                {
-                    "name": "Electronics and Communication",
-                    "sub_course": []
-                },
-                {
-                    "name": "Bio-Technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Electrical",
-                    "sub_course": []
-                },
-                {
-                    "name": "Chemical",
-                    "sub_course": []
-                },
-                {
-                    "name": "Aeronautical",
-                    "sub_course": []
-                },
-                {
-                    "name": "Agriculture",
-                    "sub_course": []
-                },
-                {
-                    "name": "Architecture",
-                    "sub_course": []
-                },
-                {
-                    "name": "Bio-Medical",
-                    "sub_course": []
-                },
-                {
-                    "name": "Marine technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Mining technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Leather technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Textile technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Petroleum technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Plastic technology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Rubber technology",
-                    "sub_course": []
-                }
-            ],
-            "examination": [
-                {
-                    "exam_name": "APRJC",
-                    "website": "www.aprs.cgg.gov.in",
-                    "purpose": "",
-                    "eligibility": "",
-                    "application_mode": ""
-                },
-                {
-                    "exam_name": "Polytechnic Entrance",
-                    "website": "www.appolitechnic.nic",
-                    "purpose": "",
-                    "eligibility": "",
-                    "application_mode": ""
+                    "name": "Government Jobs",
+                    "duration": "",
+                    "course": [
+                        {
+                            "name": "VRA",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Military",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "AW(Female)",
+                            "sub_course": []
+                        },
+                        {
+                            "name": "Driving Post",
+                            "sub_course": []
+                        }
+                    ],
+                    "examination": []
                 }
             ]
-        },
-        {
-            "name": "IIIT",
-            "duration": "",
-            "course": [],
-            "examination": []
-        },
-        {
-            "name": "ITI",
-            "duration": "2 years",
-            "course": [
-                {
-                    "name": "Fitter",
-                    "sub_course": []
-                },
-                {
-                    "name": "Civil(Draughtman)",
-                    "sub_course": []
-                },
-                {
-                    "name": "Mechanical",
-                    "sub_course": [
-                        "Radio & TV",
-                        "Motor vechicle",
-                        "Diesel",
-                        "Marine"
-                    ]
-                },
-                {
-                    "name": "Electrican &",
-                    "sub_course": []
-                },
-                {
-                    "name": "Plumber",
-                    "sub_course": []
-                },
-                {
-                    "name": "Surveyor",
-                    "sub_course": []
-                },
-                {
-                    "name": "Electrical",
-                    "sub_course": []
-                },
-                {
-                    "name": "Machine tools",
-                    "sub_course": []
-                },
-                {
-                    "name": "Welder",
-                    "sub_course": []
-                },
-                {
-                    "name": "Firemen",
-                    "sub_course": []
-                },
-                {
-                    "name": "Cookery",
-                    "sub_course": []
-                },
-                {
-                    "name": "Paint Technology",
-                    "sub_course": []
-                }
-            ],
-            "examination": []
-        },
-        {
-            "name": "Paramedical",
-            "duration": "3 years",
-            "course": [
-                {
-                    "name": "DLMT",
-                    "sub_course": []
-                },
-                {
-                    "name": "DHFM",
-                    "sub_course": []
-                },
-                {
-                    "name": "DOA",
-                    "sub_course": []
-                },
-                {
-                    "name": "DOT",
-                    "sub_course": []
-                },
-                {
-                    "name": "Health Inspector",
-                    "sub_course": []
-                },
-                {
-                    "name": "Sanitary Inspector",
-                    "sub_course": []
-                }
-            ],
-            "examination": []
-        },
-        {
-            "name": "Short Term Courses",
-            "duration": "6 months/1 year",
-            "course": [
-                {
-                    "name": "DTP",
-                    "sub_course": []
-                },
-                {
-                    "name": "PGDCA",
-                    "sub_course": []
-                },
-                {
-                    "name": "Tally",
-                    "sub_course": []
-                },
-                {
-                    "name": "Internet",
-                    "sub_course": []
-                },
-                {
-                    "name": "Graphics",
-                    "sub_course": []
-                },
-                {
-                    "name": "Animation",
-                    "sub_course": []
-                },
-                {
-                    "name": "Web Designing",
-                    "sub_course": []
-                },
-                {
-                    "name": "Cyber security",
-                    "sub_course": []
-                }
-            ],
-            "examination": []
-        },
-        {
-            "name": "Others",
-            "duration": "",
-            "course": [
-                {
-                    "name": "Beauty & Cosmetology",
-                    "sub_course": []
-                },
-                {
-                    "name": "Jewelry Designing",
-                    "sub_course": []
-                },
-                {
-                    "name": "Fashion Designing",
-                    "sub_course": []
-                },
-                {
-                    "name": "Photography",
-                    "sub_course": []
-                }
-            ],
-            "examination": []
-        },
-        {
-            "name": "Government Jobs",
-            "duration": "",
-            "course": [
-                {
-                    "name": "VRA",
-                    "sub_course": []
-                },
-                {
-                    "name": "Military",
-                    "sub_course": []
-                },
-                {
-                    "name": "AW(Female)",
-                    "sub_course": []
-                },
-                {
-                    "name": "Driving Post",
-                    "sub_course": []
-                }
-            ],
-            "examination": []
         }
     ]
 }
