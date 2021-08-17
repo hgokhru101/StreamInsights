@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var gson = Gson()
         val jsonString = getJSONFromAssets(this)
-        tvJsonString.text = jsonString
+//        tvJsonString.text = jsonString
 
         //Talent Test Page
 
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             getJSONFromAssets(this),
             AfterTenListClass::class.java
         )
+        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
         Log.d("Main Activity","Size:")
     }
 
