@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
@@ -41,6 +42,43 @@ class MainActivity : AppCompatActivity() {
             TalentTestListClass::class.java
         )
         try {
+//        tvJsonString.text = jsonString
+
+        //Talent Test Page
+
+//        val talent_Test_Model = gson.fromJson(
+//            jsonString,
+//            TalentTestListClass::class.java
+//        )
+
+        //Exams After Intermediate
+
+//        val exam_after_intermediate_model = gson.fromJson(
+//            jsonString,
+//            ExamAfterIntermediateListClass::class.java
+//        )
+
+        //Course Type
+
+//        val Course_Type_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            CourseTypeListClass::class.java
+//        )
+
+        //After Intermediate
+
+//        val After_Intermedaite_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            AfterIntermediateListClass::class.java
+//        )
+
+        //After Graduation
+
+//        val After_Graduation_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            AfterGraduationListClass::class.java
+//        )
+
 
             var i: Int = 0;
             val obj = JSONObject(getJSONFromAssets(this))
@@ -79,6 +117,11 @@ class MainActivity : AppCompatActivity() {
         val customAdapter = CustomAdapter(this@MainActivity, test_name, eligibility, website_link)
         recyclerView.adapter = customAdapter
 
+        val After_Tenth_Model = gson.fromJson(
+            getJSONFromAssets(this),
+            AfterTenListClass::class.java
+        )
+        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
         Log.d("Main Activity","Size:")
     }
 
