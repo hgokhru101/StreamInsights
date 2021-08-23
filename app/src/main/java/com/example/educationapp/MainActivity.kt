@@ -109,22 +109,7 @@ class MainActivity : AppCompatActivity() {
     private fun getJSONFromAssets(context: Context): String? {
         var json: String? = null
         try {
-            val myUsersJSONFile = assets.open("talent_test.json")
-            val size = myUsersJSONFile.available()
-            val buffer = ByteArray(size)
-            myUsersJSONFile.read(buffer)
-            myUsersJSONFile.close()
-            json = String(buffer)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-            return null
-        }
-        return json
-    }
-    private fun getJSONFromAssets1(context: Context): String? {
-        var json: String? = null
-        try {
-            val myUsersJSONFile = assets.open("After10th.json")
+            val myUsersJSONFile = assets.open("CourseTypes.json")
             val size = myUsersJSONFile.available()
             val buffer = ByteArray(size)
             myUsersJSONFile.read(buffer)
