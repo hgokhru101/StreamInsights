@@ -6,16 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONArray
-import org.json.JSONObject
 import java.io.IOException
-import java.nio.charset.Charset
-import java.nio.file.Files.size
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.gson.JsonObject
-import kotlinx.android.synthetic.main.rawlayout.*
 
 class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;

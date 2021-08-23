@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class Course_Type_Adapter(private val Course_Type_List: ArrayList<CourseTypeCourseClass>): RecyclerView.Adapter<Course_Type_Adapter.MyViewHolder>() {
+class Course_Type_Adapter(private val Course_Type_List: ArrayList<CourseTypeClass>): RecyclerView.Adapter<Course_Type_Adapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -20,8 +20,8 @@ class Course_Type_Adapter(private val Course_Type_List: ArrayList<CourseTypeCour
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         val currentCourse = Course_Type_List[position]
-        holder.CourseView.text = currentCourse.name
-        holder.SubCourseView.text = currentCourse.course_name.toString()
+        holder.CourseView.text = currentCourse.title
+        holder.SubCourseView.text = currentCourse.courses.toString()
 
     }
 
