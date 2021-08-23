@@ -23,27 +23,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        title = "KotlinApp"
+
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val linearLayoutManager = LinearLayoutManager(applicationContext)
-        recyclerView.layoutManager = linearLayoutManager
 
-        var TitleName= ArrayList<String>()
-        var Exams= ArrayList<String>()
-        var titlename= ArrayList<String>()
-        var test_name= ArrayList<String>()
-        var eligibility= ArrayList<String>()
-        var syllabus= ArrayList<String>()
-        var website_link= ArrayList<String>()
+//        var TitleName= ArrayList<String>()
+//        var Exams= ArrayList<String>()
+//        var titlename= ArrayList<String>()
+//        var test_name= ArrayList<String>()
+//        var eligibility= ArrayList<String>()
+//        var syllabus= ArrayList<String>()
+//        var website_link= ArrayList<String>()
         var gson = Gson()
-        val jsonString = getJSONFromAssets(this)
-        val talentModel = gson.fromJson(
-            jsonString,
-            TalentTestListClass::class.java
-        )
-        try {
-//        tvJsonString.text = jsonString
-
+//        val jsonString = getJSONFromAssets(this)
         //Talent Test Page
 
 //        val talent_Test_Model = gson.fromJson(
@@ -60,10 +51,10 @@ class MainActivity : AppCompatActivity() {
 
         //Course Type
 
-//        val Course_Type_Model = gson.fromJson(
-//            getJSONFromAssets(this),
-//            CourseTypeListClass::class.java
-//        )
+        val Course_Type_Model = gson.fromJson(
+            getJSONFromAssets(this),
+            CourseTypeListClass::class.java
+        )
 
         //After Intermediate
 
@@ -79,48 +70,44 @@ class MainActivity : AppCompatActivity() {
 //            AfterGraduationListClass::class.java
 //        )
 
+        //After 10th
 
-            var i: Int = 0;
-            val obj = JSONObject(getJSONFromAssets(this))
-            val userArray = obj.getJSONArray("data")
-            for (i in  0 until userArray.length()){
-                //creating json object for fetching data
-                val userDetail = userArray.getJSONObject(i)
-                // fetching title and exams
-//                titleName.add(userdetail.getString())
-              //  var examtitle=userDetail.getJSONObject("title")
+//        val After_Tenth_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            AfterTenListClass::class.java
+//        )
 
-                TitleName.add(userDetail.getString("title"))
-             //   Exams.add(userDetail.getString("exams"))
-                //val detail=userDetail.getJSONObject("exams")
-                val examarray=userDetail.getJSONArray("exams")
-                var j=0
-               for(j in 0 until examarray.length()){
-                   val examDetail = examarray.getJSONObject(j)
-                   test_name.add(examDetail.getString("test_name"))
-                   eligibility.add(examDetail.getString("eligibility"))
-                   syllabus.add(examDetail.getString("syllabus"))
-                   website_link.add(examDetail.getString("website"))
-               }
+// Fetching Data using JSONObjects and JSONArray
 
-            }
+//        try {
+//            var i: Int = 0;
+//            val obj = JSONObject(getJSONFromAssets(this))
+//            val userArray = obj.getJSONArray("data")
+//            for (i in  0 until userArray.length()){
+//                //creating json object for fetching data
+//                val userDetail = userArray.getJSONObject(i)
+//                TitleName.add(userDetail.getString("title"))
+//                val examarray=userDetail.getJSONArray("exams")
+//                var j=0
+//               for(j in 0 until examarray.length()){
+//                   val examDetail = examarray.getJSONObject(j)
+//                   test_name.add(examDetail.getString("test_name"))
+//                   eligibility.add(examDetail.getString("eligibility"))
+//                   syllabus.add(examDetail.getString("syllabus"))
+//                   website_link.add(examDetail.getString("website"))
+//               }
+//
+//            }
+//        }catch (ex: IOException){
+//            ex.printStackTrace()
+//        }
 
-           // tvJsonString.text = jsonString
+        recyclerView.adapter = Course_Type_Adapter(Course_Type_Model.data)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.setHasFixedSize(true)
 
-            val AfterTenModel = gson.fromJson(
-                getJSONFromAssets1(this),
-                AfterTenListClass::class.java
-            )
-        }catch (ex: IOException){
-            ex.printStackTrace()
-        }
-        val customAdapter = CustomAdapter(this@MainActivity, test_name, eligibility, website_link)
-        recyclerView.adapter = customAdapter
 
-        val After_Tenth_Model = gson.fromJson(
-            getJSONFromAssets(this),
-            AfterTenListClass::class.java
-        )
+
         Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
         Log.d("Main Activity","Size:")
     }
