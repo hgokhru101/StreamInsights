@@ -4,20 +4,22 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ExpandableListAdapter
+import android.widget.ExpandableListView
 import android.widget.Toast
 import com.google.gson.Gson
 import java.io.IOException
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
-
+    private lateinit var listviewadapter:Course_Type_Adapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+//        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
 //        var TitleName= ArrayList<String>()
 //        var Exams= ArrayList<String>()
@@ -26,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 //        var eligibility= ArrayList<String>()
 //        var syllabus= ArrayList<String>()
 //        var website_link= ArrayList<String>()
-        var gson = Gson()
+
 //        val jsonString = getJSONFromAssets(this)
         //Talent Test Page
 
@@ -43,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         //Course Type
-
+        var gson = Gson()
         val Course_Type_Model = gson.fromJson(
             getJSONFromAssets(this),
             CourseTypeListClass::class.java
@@ -95,10 +97,21 @@ class MainActivity : AppCompatActivity() {
 //            ex.printStackTrace()
 //        }
 
-        recyclerView.adapter = Course_Type_Adapter(Course_Type_Model.data)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.setHasFixedSize(true)
+//        recyclerView.adapter = Course_Type_Adapter(Course_Type_Model.data)
+//        recyclerView.layoutManager = LinearLayoutManager(this)
+//        recyclerView.setHasFixedSize(true)
+        listviewadapter= Course_Type_Adapter(Course_Type_Model.data.,Course_Type_Model.data[0].courses)
+        elistView.setAdapter(listviewadapter)
+        try{
+            var i:Int=0
+            for(i in 0 until Course_Type_Model.data[0].courses.size) {
+            var Flist=Course_Type_Model.data[0].courses[i].name
+                var Slist=Course_Type_Model
+            }
 
+        }catch (ex:IOException){
+            ex.printStackTrace()
+        }
 
 
         Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()

@@ -27,6 +27,7 @@ class Course_Type_Adapter_1(
 
         holder.Courses_View.text = currentCourse.name
         holder.Sub_CoursesView.text = currentCourse.course_name.toString()
+//        holder.recyclerview2.adapter= Course_Type_Adapter_1(currentCourse.course_name)
 //        if (currentCourse.duration != "") holder.textView3.text = currentCourse.duration
 
         Log.i("position", "$position")
