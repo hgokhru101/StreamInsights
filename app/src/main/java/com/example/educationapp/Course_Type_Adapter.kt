@@ -78,7 +78,7 @@ class Course_Type_Adapter internal constructor(private val context:Context,priva
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             convertView = inflater.inflate(R.layout.course_type_1, null)
         }
-        val courseNameTv=convertView!!.findViewById<TextView>(R.id.Course_Title)
+        val courseNameTv=convertView!!.findViewById<TextView>(R.id.Sub_Courses)
         courseNameTv.setText(TopicTitle)
         return convertView
     }
