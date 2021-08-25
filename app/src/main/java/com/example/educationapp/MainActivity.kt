@@ -13,11 +13,9 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
-abstract class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
     private lateinit var listviewadapter:Course_Type_Adapter
-    abstract var Firstlist:ArrayList<String>
-    abstract var Topiclist:HashMap<String,ArrayList<String>>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -103,6 +101,8 @@ abstract class MainActivity : AppCompatActivity() {
 //        recyclerView.layoutManager = LinearLayoutManager(this)
 //        recyclerView.setHasFixedSize(true)
 
+        var Firstlist:ArrayList<String> = ArrayList<String>()
+        var Topiclist:HashMap<String,ArrayList<String>> = HashMap()
         try{
             var i:Int=0
             for(i in 0 until Course_Type_Model.data[0].courses.size) {
