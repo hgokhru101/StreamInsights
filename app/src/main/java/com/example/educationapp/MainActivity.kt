@@ -13,14 +13,16 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+abstract class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
     private lateinit var listviewadapter:Course_Type_Adapter
+    abstract var Firstlist:ArrayList<String>
+    abstract var Topiclist:HashMap<String,ArrayList<String>>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-
 //        var TitleName= ArrayList<String>()
 //        var Exams= ArrayList<String>()
 //        var titlename= ArrayList<String>()
@@ -36,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 //            jsonString,
 //            TalentTestListClass::class.java
 //        )
-
         //Exams After Intermediate
 
 //        val exam_after_intermediate_model = gson.fromJson(
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         //Course Type
+
         var gson = Gson()
         val Course_Type_Model = gson.fromJson(
             getJSONFromAssets(this),
@@ -100,23 +102,47 @@ class MainActivity : AppCompatActivity() {
 //        recyclerView.adapter = Course_Type_Adapter(Course_Type_Model.data)
 //        recyclerView.layoutManager = LinearLayoutManager(this)
 //        recyclerView.setHasFixedSize(true)
-        listviewadapter= Course_Type_Adapter(Course_Type_Model.data.,Course_Type_Model.data[0].courses)
-        elistView.setAdapter(listviewadapter)
+
         try{
             var i:Int=0
             for(i in 0 until Course_Type_Model.data[0].courses.size) {
-            var Flist=Course_Type_Model.data[0].courses[i].name
-                var Slist=Course_Type_Model
+                var Slist:ArrayList<String>
+                Firstlist.add(Course_Type_Model.data[0].courses[i].name)
+                Slist=Course_Type_Model.data[0].courses[i].course_name
+                Topiclist[Firstlist[i]]=Slist
             }
+
 
         }catch (ex:IOException){
             ex.printStackTrace()
         }
+        listviewadapter= Course_Type_Adapter(this,Firstlist,Topiclist)
+        elistView.setAdapter(listviewadapter)
 
 
         Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
         Log.d("Main Activity","Size:")
     }
+
+//    private fun showList() {
+//        var gson = Gson()
+//        val Course_Type_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            CourseTypeListClass::class.java
+//        )
+//        lateinit var Flist:ArrayList<String>
+//        lateinit var Topiclist:HashMap<String,ArrayList<String>>
+//        var i:Int=0
+//        for(i in 0 until Course_Type_Model.data[0].courses.size) {
+//            var Slist:ArrayList<String>
+//            Flist.add(Course_Type_Model.data[0].courses[i].name)
+////            var Flist=Course_Type_Model.data[0].courses[i].name
+//            Slist=Course_Type_Model.data[0].courses[i].course_name
+////                (Slist as ArrayList<>)
+//            Topiclist[Flist[i]]=Slist
+//    }
+//
+//    }
 
 
     private fun getJSONFromAssets(context: Context): String? {
