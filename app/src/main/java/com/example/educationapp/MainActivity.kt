@@ -30,18 +30,25 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
             actionBar.title="What Next?"
         }
 
-        val button1 = findViewById<Button>(R.id.button1)
-        val button2 = findViewById<Button>(R.id.button2)
-        val button3 = findViewById<Button>(R.id.button3)
-        val button4 = findViewById<Button>(R.id.button4)
-        val button5 = findViewById<Button>(R.id.button5)
+
         button1.setOnClickListener {
             val intent = Intent(this, Course_type_activity::class.java)
             // start your next activity
             startActivity(intent)
         }
-        //button1.setOnClickListener(this)
-        button2.setOnClickListener(this)
+
+        button2.setOnClickListener{
+            val intent2 =Intent(this,AfterIntermediate::class.java)
+            startActivity(intent2)
+        }
+        val button1 = findViewById<Button>(R.id.button1)
+        val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
+        val button4 = findViewById<Button>(R.id.button4)
+        val button5 = findViewById<Button>(R.id.button5)
+
+//        button1.setOnClickListener(this)
+//        button2.setOnClickListener(this)
         button3.setOnClickListener(this)
         button4.setOnClickListener(this)
         button5.setOnClickListener(this)
@@ -51,6 +58,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
     }
 
     override fun onClick(v: View) {
+        button1.setOnClickListener(this)
         when (v.id) {
             R.id.button1 -> Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show()
             R.id.button2 -> Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show()

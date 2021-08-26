@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Course_type_activity"
-            android:parentActivityName= ".MainActivity"
+            android:name=".AfterIntermediate"
+            android:parentActivityName=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".Course_type_activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

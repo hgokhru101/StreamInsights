@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/drawable/ic_school_black_24dp.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/drawable/ic_slack_new_logo.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/layout/activity_after_intermediate.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_course_type.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.15" />
@@ -11,7 +15,7 @@
         <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/course_type.xml" value="0.2" />
         <entry key="app/src/main/res/layout/course_type_1.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/first_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/first_page.xml" value="0.16" />
         <entry key="app/src/main/res/layout/rawlayout.xml" value="0.33" />
       </map>
     </option>
