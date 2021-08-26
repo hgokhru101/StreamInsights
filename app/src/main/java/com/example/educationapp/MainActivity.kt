@@ -170,7 +170,6 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
 
 //        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
 //        Log.d("Main Activity","Size:")
-    }
 
 //    private fun showList() {
 //        var gson = Gson()
@@ -193,19 +192,19 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
 //    }
 
 
-//     fun getJSONFromAssets(context: Context): String? {
-//        var json: String? = null
-//        try {
-//            val myUsersJSONFile = assets.open("CourseTypes.json")
-//            val size = myUsersJSONFile.available()
-//            val buffer = ByteArray(size)
-//            myUsersJSONFile.read(buffer)
-//            myUsersJSONFile.close()
-//            json = String(buffer)
-//        } catch (ex: IOException) {
-//            ex.printStackTrace()
-//            return null
-//        }
-//        return json
-//    }
-//}
+     fun getJSONFromAssets(context: Context): String? {
+        var json: String? = null
+        try {
+            val myUsersJSONFile = assets.open("CourseTypes.json")
+            val size = myUsersJSONFile.available()
+            val buffer = ByteArray(size)
+            myUsersJSONFile.read(buffer)
+            myUsersJSONFile.close()
+            json = String(buffer)
+        } catch (ex: IOException) {
+            ex.printStackTrace()
+            return null
+        }
+        return json
+    }
+}
