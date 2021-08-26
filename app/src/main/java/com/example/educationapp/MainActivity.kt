@@ -1,9 +1,12 @@
 package com.example.educationapp
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ExpandableListAdapter
 import android.widget.ExpandableListView
 import android.widget.Toast
@@ -12,14 +15,51 @@ import java.io.IOException
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.first_page.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() , View.OnClickListener{
     //RecyclerView recyclerview;
-    private lateinit var listviewadapter:Course_Type_Adapter
+//    private lateinit var listviewadapter:Course_Type_Adapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.first_page)
+
+       val actionBar=supportActionBar
+        if(actionBar!=null){
+            actionBar.title="What Next?"
+        }
+
+        val button1 = findViewById<Button>(R.id.button1)
+        val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
+        val button4 = findViewById<Button>(R.id.button4)
+        val button5 = findViewById<Button>(R.id.button5)
+        button1.setOnClickListener {
+            val intent = Intent(this, Course_type_activity::class.java)
+            // start your next activity
+            startActivity(intent)
+        }
+        //button1.setOnClickListener(this)
+        button2.setOnClickListener(this)
+        button3.setOnClickListener(this)
+        button4.setOnClickListener(this)
+        button5.setOnClickListener(this)
+
+        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
+        Log.d("Main Activity","Size:")
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.button1 -> Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show()
+            R.id.button2 -> Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show()
+            R.id.button3 -> Toast.makeText(this, "Button 3 clicked", Toast.LENGTH_SHORT).show()
+            R.id.button4 -> Toast.makeText(this, "Button 4 clicked", Toast.LENGTH_SHORT).show()
+            R.id.button5 -> Toast.makeText(this, "Button 5 clicked", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 //        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 //        var TitleName= ArrayList<String>()
 //        var Exams= ArrayList<String>()
@@ -45,11 +85,11 @@ class MainActivity : AppCompatActivity() {
 
         //Course Type
 
-        var gson = Gson()
-        val Course_Type_Model = gson.fromJson(
-            getJSONFromAssets(this),
-            CourseTypeListClass::class.java
-        )
+//        var gson = Gson()
+//        val Course_Type_Model = gson.fromJson(
+//            getJSONFromAssets(this),
+//            CourseTypeListClass::class.java
+//        )
 
         //After Intermediate
 
@@ -101,27 +141,27 @@ class MainActivity : AppCompatActivity() {
 //        recyclerView.layoutManager = LinearLayoutManager(this)
 //        recyclerView.setHasFixedSize(true)
 
-        var Firstlist:ArrayList<String> = ArrayList<String>()
-        var Topiclist:HashMap<String,ArrayList<String>> = HashMap()
-        try{
-            var i:Int=0
-            for(i in 0 until Course_Type_Model.data[0].courses.size) {
-                var Slist:ArrayList<String>
-                Firstlist.add(Course_Type_Model.data[0].courses[i].name)
-                Slist=Course_Type_Model.data[0].courses[i].course_name
-                Topiclist[Firstlist[i]]=Slist
-            }
+//        var Firstlist:ArrayList<String> = ArrayList<String>()
+//        var Topiclist:HashMap<String,ArrayList<String>> = HashMap()
+//        try{
+//            var i:Int=0
+//            for(i in 0 until Course_Type_Model.data[0].courses.size) {
+//                var Slist:ArrayList<String>
+//                Firstlist.add(Course_Type_Model.data[0].courses[i].name)
+//                Slist=Course_Type_Model.data[0].courses[i].course_name
+//                Topiclist[Firstlist[i]]=Slist
+//            }
+//
+//
+//        }catch (ex:IOException){
+//            ex.printStackTrace()
+//        }
+//        listviewadapter= Course_Type_Adapter(this,Firstlist,Topiclist)
+//        elistView.setAdapter(listviewadapter)
 
 
-        }catch (ex:IOException){
-            ex.printStackTrace()
-        }
-        listviewadapter= Course_Type_Adapter(this,Firstlist,Topiclist)
-        elistView.setAdapter(listviewadapter)
-
-
-        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
-        Log.d("Main Activity","Size:")
+//        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
+//        Log.d("Main Activity","Size:")
     }
 
 //    private fun showList() {
@@ -145,19 +185,19 @@ class MainActivity : AppCompatActivity() {
 //    }
 
 
-    private fun getJSONFromAssets(context: Context): String? {
-        var json: String? = null
-        try {
-            val myUsersJSONFile = assets.open("CourseTypes.json")
-            val size = myUsersJSONFile.available()
-            val buffer = ByteArray(size)
-            myUsersJSONFile.read(buffer)
-            myUsersJSONFile.close()
-            json = String(buffer)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-            return null
-        }
-        return json
-    }
-}
+//     fun getJSONFromAssets(context: Context): String? {
+//        var json: String? = null
+//        try {
+//            val myUsersJSONFile = assets.open("CourseTypes.json")
+//            val size = myUsersJSONFile.available()
+//            val buffer = ByteArray(size)
+//            myUsersJSONFile.read(buffer)
+//            myUsersJSONFile.close()
+//            json = String(buffer)
+//        } catch (ex: IOException) {
+//            ex.printStackTrace()
+//            return null
+//        }
+//        return json
+//    }
+//}
