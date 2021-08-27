@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.first_page.*
 
-class MainActivity : AppCompatActivity() , View.OnClickListener{
+class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
 //    private lateinit var listviewadapter:Course_Type_Adapter
 
@@ -49,24 +49,24 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
 
 //        button1.setOnClickListener(this)
 //        button2.setOnClickListener(this)
-        button3.setOnClickListener(this)
-        button4.setOnClickListener(this)
-        button5.setOnClickListener(this)
+//        button3.setOnClickListener(this)
+//        button4.setOnClickListener(this)
+//        button5.setOnClickListener(this)
 
         Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
         Log.d("Main Activity","Size:")
     }
 
-    override fun onClick(v: View) {
-        button1.setOnClickListener(this)
-        when (v.id) {
-            R.id.button1 -> Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show()
-            R.id.button2 -> Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show()
-            R.id.button3 -> Toast.makeText(this, "Button 3 clicked", Toast.LENGTH_SHORT).show()
-            R.id.button4 -> Toast.makeText(this, "Button 4 clicked", Toast.LENGTH_SHORT).show()
-            R.id.button5 -> Toast.makeText(this, "Button 5 clicked", Toast.LENGTH_SHORT).show()
-        }
-    }
+//    override fun onClick(v: View) {
+//        button1.setOnClickListener(this)
+//        when (v.id) {
+//            R.id.button1 -> Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show()
+//            R.id.button2 -> Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show()
+//            R.id.button3 -> Toast.makeText(this, "Button 3 clicked", Toast.LENGTH_SHORT).show()
+//            R.id.button4 -> Toast.makeText(this, "Button 4 clicked", Toast.LENGTH_SHORT).show()
+//            R.id.button5 -> Toast.makeText(this, "Button 5 clicked", Toast.LENGTH_SHORT).show()
+//        }
+//    }
 
 //        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 //        var TitleName= ArrayList<String>()
