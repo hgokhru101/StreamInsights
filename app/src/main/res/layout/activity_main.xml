@@ -8,11 +8,4 @@
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
-    <ExpandableListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/elistView2"
-        android:layoutDirection="rtl"
-        />
-
 </LinearLayout>

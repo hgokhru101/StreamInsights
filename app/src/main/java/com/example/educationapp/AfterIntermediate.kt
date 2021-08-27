@@ -18,38 +18,16 @@ class AfterIntermediate : AppCompatActivity() {
         }
         actionBar!!.setDisplayHomeAsUpEnabled(true)
         var gson = Gson()
+        val main = MainActivity()
+
+        val jsonString = main.getJSONFromAssets(this,"AfterIntermediate.json")
         val After_Intermediate_Model = gson.fromJson(
-            getJSONFromAssets(this),
+            jsonString,
             AfterIntermediateListClass::class.java
         )
-        val main = MainActivity()
 
         val data = After_Intermediate_Model.data[0].streams
 
     }
 
-    //ExamAfterIntermediateListClass
-
-
-
-
-
-
-
-
-    private fun getJSONFromAssets(context: Context): String? {
-        var json: String? = null
-        try {
-            val myUsersJSONFile = assets.open("AfterIntermediate.json")
-            val size = myUsersJSONFile.available()
-            val buffer = ByteArray(size)
-            myUsersJSONFile.read(buffer)
-            myUsersJSONFile.close()
-            json = String(buffer)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-            return null
-        }
-        return json
-    }
 }

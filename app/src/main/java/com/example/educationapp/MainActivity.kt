@@ -31,12 +31,6 @@ class MainActivity : AppCompatActivity() {
             actionBar.title="What Next?"
         }
 
-
-        val gson = Gson()
-        val After_Intermedaite_Model = gson.fromJson(
-            getJSONFromAssets(this,"AfterIntermediate.json"),
-            AfterIntermediateListClass::class.java)
-
         button1.setOnClickListener {
             val intent = Intent(this, Course_type_activity::class.java)
             // start your next activity
@@ -106,6 +100,9 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         //After Intermediate
+//        val After_Intermedaite_Model = gson.fromJson(
+//            getJSONFromAssets(this,"AfterIntermediate.json"),
+//            AfterIntermediateListClass::class.java)
 
         //After Graduation
 
