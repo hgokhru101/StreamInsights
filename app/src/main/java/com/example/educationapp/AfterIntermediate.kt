@@ -21,12 +21,12 @@ class AfterIntermediate : AppCompatActivity() {
         val main = MainActivity()
 
         val jsonString = main.getJSONFromAssets(this,"AfterIntermediate.json")
-        val After_Intermediate_Model = gson.fromJson(
+        val after_Intermediate_Model = gson.fromJson(
             jsonString,
             AfterIntermediateListClass::class.java
         )
 
-        val data = After_Intermediate_Model.data[0].streams
+        val data = after_Intermediate_Model.data[0].streams
 
     }
 

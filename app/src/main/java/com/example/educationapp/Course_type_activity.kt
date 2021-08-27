@@ -27,26 +27,25 @@ class Course_type_activity : AppCompatActivity() {
         val main = MainActivity()
         val jsonString = main.getJSONFromAssets(this,"CourseTypes.json")
         var gson = Gson()
-        val Course_Type_Model = gson.fromJson(
+        val course_Type_Model = gson.fromJson(
             jsonString,
             CourseTypeListClass::class.java
         )
-        var Firstlist:ArrayList<String> = ArrayList<String>()
-        var Topiclist:HashMap<String,ArrayList<String>> = HashMap()
+        var firstlist:ArrayList<String> = ArrayList<String>()
+        var topiclist:HashMap<String,ArrayList<String>> = HashMap()
         try{
             var i:Int=0
-            for(i in 0 until Course_Type_Model.data[0].courses.size) {
-                var Slist:ArrayList<String>
-                Firstlist.add(Course_Type_Model.data[0].courses[i].name)
-                Slist=Course_Type_Model.data[0].courses[i].course_name
-                Topiclist[Firstlist[i]]=Slist
+            for(i in 0 until course_Type_Model.data[0].courses.size) {
+                firstlist.add(course_Type_Model.data[0].courses[i].name)
+                var slist:ArrayList<String> = course_Type_Model.data[0].courses[i].course_name
+                topiclist[firstlist[i]]=slist
             }
 
 
         }catch (ex: IOException){
             ex.printStackTrace()
         }
-        listviewadapter= Course_Type_Adapter(this,Firstlist,Topiclist)
+        listviewadapter= Course_Type_Adapter(this,firstlist,topiclist)
         elistView.setAdapter(listviewadapter)
 
 
@@ -54,19 +53,4 @@ class Course_type_activity : AppCompatActivity() {
 //        Log.d("Main Activity","Size:")
     }
 
-//    private fun getJSONFromAssets(context: Context): String? {
-//        var json: String? = null
-//        try {
-//            val myUsersJSONFile = assets.open("CourseTypes.json")
-//            val size = myUsersJSONFile.available()
-//            val buffer = ByteArray(size)
-//            myUsersJSONFile.read(buffer)
-//            myUsersJSONFile.close()
-//            json = String(buffer)
-//        } catch (ex: IOException) {
-//            ex.printStackTrace()
-//            return null
-//        }
-//        return json
-//    }
 }
