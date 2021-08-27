@@ -17,14 +17,18 @@ class AfterIntermediate : AppCompatActivity() {
             actionBar.title="After Intermediate" //title for actionbar
         }
         actionBar!!.setDisplayHomeAsUpEnabled(true)
+        var gson = Gson()
+        val After_Intermediate_Model = gson.fromJson(
+            getJSONFromAssets(this),
+            AfterIntermediateListClass::class.java
+        )
+        val main = MainActivity()
+
+        val data = After_Intermediate_Model.data[0].streams
+
     }
 
     //ExamAfterIntermediateListClass
-//    var gson = Gson()
-//    val Course_Type_Model = gson.fromJson(
-//        getJSONFromAssets(this),
-//        AfterIntermediateListClass::class.java
-//    )
 
 
 
@@ -33,20 +37,19 @@ class AfterIntermediate : AppCompatActivity() {
 
 
 
-
-//    private fun getJSONFromAssets(context: Context): String? {
-//        var json: String? = null
-//        try {
-//            val myUsersJSONFile = assets.open("AfterIntermediate.json")
-//            val size = myUsersJSONFile.available()
-//            val buffer = ByteArray(size)
-//            myUsersJSONFile.read(buffer)
-//            myUsersJSONFile.close()
-//            json = String(buffer)
-//        } catch (ex: IOException) {
-//            ex.printStackTrace()
-//            return null
-//        }
-//        return json
-//    }
+    private fun getJSONFromAssets(context: Context): String? {
+        var json: String? = null
+        try {
+            val myUsersJSONFile = assets.open("AfterIntermediate.json")
+            val size = myUsersJSONFile.available()
+            val buffer = ByteArray(size)
+            myUsersJSONFile.read(buffer)
+            myUsersJSONFile.close()
+            json = String(buffer)
+        } catch (ex: IOException) {
+            ex.printStackTrace()
+            return null
+        }
+        return json
+    }
 }

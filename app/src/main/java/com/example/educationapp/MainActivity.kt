@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
 //    private lateinit var listviewadapter:Course_Type_Adapter
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.first_page)
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity() {
             actionBar.title="What Next?"
         }
 
+
+        val gson = Gson()
+        val After_Intermedaite_Model = gson.fromJson(
+            getJSONFromAssets(this,"AfterIntermediate.json"),
+            AfterIntermediateListClass::class.java)
 
         button1.setOnClickListener {
             val intent = Intent(this, Course_type_activity::class.java)
@@ -100,11 +106,6 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         //After Intermediate
-
-//        val After_Intermedaite_Model = gson.fromJson(
-//            getJSONFromAssets(this),
-//            AfterIntermediateListClass::class.java
-//        )
 
         //After Graduation
 
@@ -192,10 +193,10 @@ class MainActivity : AppCompatActivity() {
 //    }
 
 
-     fun getJSONFromAssets(context: Context): String? {
+     public fun getJSONFromAssets(context: Context,filename:String): String? {
         var json: String? = null
         try {
-            val myUsersJSONFile = assets.open("CourseTypes.json")
+            val myUsersJSONFile = context.assets.open(filename)
             val size = myUsersJSONFile.available()
             val buffer = ByteArray(size)
             myUsersJSONFile.read(buffer)

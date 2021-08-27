@@ -24,9 +24,11 @@ class Course_type_activity : AppCompatActivity() {
         }
         actionBar!!.setDisplayHomeAsUpEnabled(true)
 
+        val main = MainActivity()
+        val jsonString = main.getJSONFromAssets(this,"CourseTypes.json")
         var gson = Gson()
         val Course_Type_Model = gson.fromJson(
-            getJSONFromAssets(this),
+            jsonString,
             CourseTypeListClass::class.java
         )
         var Firstlist:ArrayList<String> = ArrayList<String>()
@@ -52,19 +54,19 @@ class Course_type_activity : AppCompatActivity() {
 //        Log.d("Main Activity","Size:")
     }
 
-    private fun getJSONFromAssets(context: Context): String? {
-        var json: String? = null
-        try {
-            val myUsersJSONFile = assets.open("CourseTypes.json")
-            val size = myUsersJSONFile.available()
-            val buffer = ByteArray(size)
-            myUsersJSONFile.read(buffer)
-            myUsersJSONFile.close()
-            json = String(buffer)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-            return null
-        }
-        return json
-    }
+//    private fun getJSONFromAssets(context: Context): String? {
+//        var json: String? = null
+//        try {
+//            val myUsersJSONFile = assets.open("CourseTypes.json")
+//            val size = myUsersJSONFile.available()
+//            val buffer = ByteArray(size)
+//            myUsersJSONFile.read(buffer)
+//            myUsersJSONFile.close()
+//            json = String(buffer)
+//        } catch (ex: IOException) {
+//            ex.printStackTrace()
+//            return null
+//        }
+//        return json
+//    }
 }
