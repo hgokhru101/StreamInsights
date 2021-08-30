@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff0f0"
-    tools:context=".second">
+    tools:context=".splash_screen_activity">
+
     <ImageView
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
         android:src="@drawable/ic_slack_new_logo">
-
-
     </ImageView>
 
     <TextView
@@ -21,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="697dp"
-        android:text="Education App!"
+        android:text="@string/education_app"
         android:textColor="@color/cardview_dark_background"
         android:textSize="25sp"
         android:layout_centerHorizontal="true"

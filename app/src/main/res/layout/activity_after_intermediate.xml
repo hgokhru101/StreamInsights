@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
-    tools:context=".AfterIntermediate">
+    tools:context=".after_intermediate_activity">
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
@@ -20,6 +20,7 @@
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/backgroundColor2"
         android:id="@+id/tab_1"
         android:text="Engg">
     </com.google.android.material.tabs.TabItem>
@@ -27,6 +28,7 @@
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/backgroundColor2"
         android:id="@+id/tab_2"
         android:text="Medical">
     </com.google.android.material.tabs.TabItem>
@@ -34,25 +36,29 @@
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diploma">
+        android:background="@color/backgroundColor2"
+        android:text="Degree">
     </com.google.android.material.tabs.TabItem>
 
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teach">
-    </com.google.android.material.tabs.TabItem>
-
-    <com.google.android.material.tabs.TabItem
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor2"
         android:text="NDA">
     </com.google.android.material.tabs.TabItem>
 
     <com.google.android.material.tabs.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Degree">
+        android:background="@color/backgroundColor2"
+        android:text="Teach">
+    </com.google.android.material.tabs.TabItem>
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor2"
+        android:text="Diploma">
     </com.google.android.material.tabs.TabItem>
 
     </com.google.android.material.tabs.TabLayout>
@@ -60,34 +66,9 @@
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8FF2F4"
+        android:background="@color/backgroundColor"
         android:id="@+id/viewpager">
 
     </androidx.viewpager.widget.ViewPager>
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:id="@+id/fr2">-->
-<!--        </FrameLayout>-->
-
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:gravity="center"-->
-    <!--        android:layout_marginStart="8dp"-->
-    <!--        android:layout_marginLeft="8dp"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:layout_marginEnd="8dp"-->
-    <!--        android:layout_marginRight="8dp"-->
-    <!--        android:layout_marginBottom="8dp"-->
-    <!--        android:text="This is Intermediate activity"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
 
 </androidx.appcompat.widget.LinearLayoutCompat>

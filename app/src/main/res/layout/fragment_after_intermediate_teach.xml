@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".after_intermediate_teach">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/duration"
+        android:textSize="20sp"
+        android:id="@+id/duration"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/eligibility"
+        android:textSize="20sp"
+        android:id="@+id/eligibility"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textDirection="rtl"
+        android:id="@+id/elist_Int_Teach"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
+
+</FrameLayout>

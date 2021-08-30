@@ -6,4 +6,7 @@
     <string name="whats_next_after_10th">What\'s Next After 10th?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="duration">Duration:</string>
+    <string name="eligibility">Eligibility:</string>
+    <string name="education_app">Education App!</string>
 </resources>

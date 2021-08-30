@@ -5,30 +5,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/backgroundColor2"
-    tools:context=".AfterIntFragment1">
+    tools:context=".after_intermediate_engg">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
-        android:text="Duration:"
-        android:textSize="20dp"
-        android:id="@+id/text1_frag1"/>
+        android:text="@string/duration"
+        android:textSize="20sp"
+        android:id="@+id/duration"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
-        android:text="Eligibility:"
-        android:textSize="20dp"
-        android:id="@+id/text2_frag1"/>
+        android:text="@string/eligibility"
+        android:textSize="20sp"
+        android:id="@+id/eligibility"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
 
     <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
         android:textDirection="rtl"
-        android:id="@+id/elistFrag1"/>
+        android:id="@+id/elist_Int_Engg"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
 
 </LinearLayout>

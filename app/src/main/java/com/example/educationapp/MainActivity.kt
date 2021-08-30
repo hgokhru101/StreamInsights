@@ -5,16 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
-import android.widget.ExpandableListAdapter
-import android.widget.ExpandableListView
 import android.widget.Toast
-import com.google.gson.Gson
 import java.io.IOException
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.first_page.*
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button2.setOnClickListener{
-            val intent2 =Intent(this,AfterIntermediate::class.java)
+            val intent2 =Intent(this,after_intermediate_activity::class.java)
             startActivity(intent2)
         }
         val button1 = findViewById<Button>(R.id.button1)
@@ -101,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
         //After Intermediate
 //        val After_Intermedaite_Model = gson.fromJson(
-//            getJSONFromAssets(this,"AfterIntermediate.json"),
+//            getJSONFromAssets(this,"after_intermediate_activity.json"),
 //            AfterIntermediateListClass::class.java)
 
         //After Graduation

@@ -1,5 +1,6 @@
 package com.example.educationapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,19 +11,11 @@ import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-private lateinit var listadapter:Course_Type_Adapter
+lateinit var listadapter:Course_Type_Adapter
 
-/**
- * A simple [Fragment] subclass.
- * Use the [BlankFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class BlankFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+class after_intermediate_medical : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -33,12 +26,12 @@ class BlankFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
-
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.frag_after_int2, container, false)
+        val view= inflater.inflate(R.layout.fragment_after_intermediate_medical, container, false)
 
         var gson = Gson()
         val main = MainActivity()
@@ -48,47 +41,36 @@ class BlankFragment : Fragment() {
             AfterIntermediateListClass::class.java
         )
 
-        var F_list:ArrayList<String> =ArrayList<String>()
-        var S_list:ArrayList<String> = ArrayList<String>()
-        var T_list:HashMap<String,ArrayList<String>> = HashMap()
+        val degree_name:ArrayList<String> =ArrayList<String>()
+        val deg_cour_map:HashMap<String,ArrayList<String>> = HashMap()
 
         try{
             var i:Int=0
             for(i in 0 until after_Intermediate_Model.data[0].streams[1].course.size) {
-                F_list.add(after_Intermediate_Model.data[0].streams[1].course[i].degree_name)
-                var S_list:ArrayList<String> = after_Intermediate_Model.data[0].streams[1].course[i].sub_course
-                T_list[F_list[i]]=S_list
+                degree_name.add(after_Intermediate_Model.data[0].streams[1].course[i].degree_name)
+                val sub_course:ArrayList<String> = after_Intermediate_Model.data[0].streams[1].course[i].sub_course
+                deg_cour_map[degree_name[i]]=sub_course
             }
-
 
         }catch (ex: IOException){
             ex.printStackTrace()
         }
 
-        listadapter= Course_Type_Adapter(activity!!,F_list,T_list)
+        listadapter= Course_Type_Adapter(activity!!,degree_name,deg_cour_map)
 
-        view.findViewById<TextView>(R.id.text1_frag2).text="Duration: "+after_Intermediate_Model.data[0].streams[1].duration
-        view.findViewById<TextView>(R.id.text2_frag2).text="Eligibility: "+after_Intermediate_Model.data[0].streams[1].eligible
+        view.findViewById<TextView>(R.id.duration).text="Duration: "+after_Intermediate_Model.data[0].streams[1].duration
+        view.findViewById<TextView>(R.id.eligibility).text="Eligibility: "+after_Intermediate_Model.data[0].streams[1].eligible
 
-        view.findViewById<ExpandableListView>(R.id.elistFrag2).setAdapter(listadapter)
+        view.findViewById<ExpandableListView>(R.id.elist_Int_Medical).setAdapter(listadapter)
 
         // Inflate the layout for this fragment
         return view
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BlankFragment().apply {
+            after_intermediate_medical().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

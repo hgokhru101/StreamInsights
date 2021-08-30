@@ -112,7 +112,7 @@
                         },
                         {
                             "degree_name": "BSc",
-                            "course_duration": "3 years",
+                             "duration": "3 years",
                             "type": "Degree",
                             "sub_course": [
                                 "BSc-MPC",

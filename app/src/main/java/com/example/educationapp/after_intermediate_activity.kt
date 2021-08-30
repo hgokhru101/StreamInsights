@@ -10,7 +10,7 @@ import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_after_intermediate.*
 import java.io.IOException
 
-class AfterIntermediate : AppCompatActivity() {
+class after_intermediate_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_after_intermediate)
@@ -61,12 +61,5 @@ class AfterIntermediate : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
         })
-
-        //viewpager.addOnAttachStateChangeListener(tabLayout.tab)
-
-
-
-
     }
-
 }
