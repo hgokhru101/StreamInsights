@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.TextView
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.fragment_after_int1.*
 import java.io.IOException
@@ -88,36 +89,19 @@ class AfterIntFragment1 : Fragment() {
 
         val view=inflater.inflate(R.layout.fragment_after_int1, container, false)
 
-        var l1:ArrayList<String> =ArrayList<String>()
-        var l2:ArrayList<String> = ArrayList<String>()
-        var l2_1:ArrayList<String> = ArrayList<String>()
-        var l2_2:ArrayList<String> = ArrayList<String>()
-        var l3:HashMap<String,ArrayList<String>> =HashMap()
-        l1.add("Animals")
-        l1.add("Birds")
-        l1.add("fishes")
-        l2.add("Dog")
-        l2.add("cat")
-        l2.add("tiger")
-        l2_1.add("peacock")
-        l2_1.add("Ostrich")
-        l2_1.add("pegion")
-        l3[l1[0]]=l2
-        l3[l1[1]]=l2_1
-        l2_2.add("Bombayduck")
-        l2_2.add("prompet")
-        l3[l1[2]]=l2_2
-        val afInt=AfterIntermediate()
+
 
         var Flist:ArrayList<String> =ArrayList<String>()
         var Slist:ArrayList<String> = ArrayList<String>()
         var Tlist:HashMap<String,ArrayList<String>> = HashMap()
 
+
+
         try{
             var i:Int=0
-            for(i in 0 until after_Intermediate_Model.data[0].streams.size) {
-                Flist.add(after_Intermediate_Model.data[0].streams[i].name)
-                var Slist:ArrayList<String> = after_Intermediate_Model.data[0].streams[i].course[0].sub_course
+            for(i in 0 until after_Intermediate_Model.data[0].streams[0].course.size) {
+                Flist.add(after_Intermediate_Model.data[0].streams[0].course[i].degree_name)
+                var Slist:ArrayList<String> = after_Intermediate_Model.data[0].streams[0].course[i].sub_course
                 Tlist[Flist[i]]=Slist
             }
 
@@ -127,7 +111,9 @@ class AfterIntFragment1 : Fragment() {
         }
 
         listadapter= Course_Type_Adapter(activity!!,Flist,Tlist)
-//        elistFrag1.setAdapter(listadapter)
+
+        view.findViewById<TextView>(R.id.text1_frag1).text="Duration: "+after_Intermediate_Model.data[0].streams[0].duration
+        view.findViewById<TextView>(R.id.text2_frag1).text="Eligibility: "+after_Intermediate_Model.data[0].streams[0].eligible
 
         view.findViewById<ExpandableListView>(R.id.elistFrag1).setAdapter(listadapter)
 
