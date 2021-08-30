@@ -93,6 +93,7 @@
                 {
                     "name": "Degree",
                     "eligible": "",
+                    "duration": "",
                     "course": [
                         {
                             "degree_name": "BA",
@@ -181,6 +182,7 @@
                 {
                     "name": "NDA",
                     "eligible": "",
+                    "duration": "",
                     "course": [
                         {
                             "degree_name": "Army",
@@ -205,6 +207,7 @@
                 {
                     "name": "Teaching",
                     "eligible": "",
+                    "duration": "",
                     "course": [
                         {
                             "degree_name": "D.Ed",
@@ -229,6 +232,7 @@
                 {
                     "name": "Diploma Courses",
                     "eligible": "",
+                    "duration": "",
                     "course": [
                         {
                             "degree_name": "Foreign Languages",
