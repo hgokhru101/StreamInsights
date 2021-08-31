@@ -9,4 +9,5 @@
     <string name="duration">Duration:</string>
     <string name="eligibility">Eligibility:</string>
     <string name="education_app">Education App!</string>
+    <string name="student_type">Student Type</string>
 </resources>

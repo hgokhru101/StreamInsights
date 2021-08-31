@@ -1,28 +1,34 @@
 package com.example.educationapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.BaseAdapter
 import android.widget.BaseExpandableListAdapter
+import android.widget.LinearLayout
+import android.widget.LinearLayout.*
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-class Course_Type_Adapter internal constructor(private val context:Context,private val CourseType: ArrayList<String>,private val Course_names: HashMap<String,ArrayList<String>>): BaseExpandableListAdapter() {
+class after_graduation_adapter internal constructor(private val context:Context,private val student_type: ArrayList<String>,private val stud_fut_opt_map: HashMap<String,ArrayList<String>>): BaseExpandableListAdapter() {
 
     override fun getGroupCount(): Int {
-        return CourseType.size
+        return student_type.size
     }
 
     override fun getChildrenCount(groupPosition: Int): Int {
-        return this.Course_names[this.CourseType[groupPosition]]!!.size
+        return this.stud_fut_opt_map[this.student_type[groupPosition]]!!.size
     }
 
     override fun getGroup(groupPosition: Int): Any {
-        return CourseType[groupPosition]
+        return student_type[groupPosition]
     }
 
     override fun getChild(groupPosition: Int, childPosition: Int): Any {
-        return this.Course_names[this.CourseType[groupPosition]]!![childPosition]
+        return this.stud_fut_opt_map[this.student_type[groupPosition]]!![childPosition]
     }
 
     override fun getGroupId(groupPosition: Int): Long {
@@ -50,10 +56,10 @@ class Course_Type_Adapter internal constructor(private val context:Context,priva
         if (convertView==null) {
             val inflater =
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            convertView = inflater.inflate(R.layout.course_type_parent, null)
+            convertView = inflater.inflate(R.layout.after_graduation_parent, null)
         }
-        val courseTypeTv=convertView!!.findViewById<TextView>(R.id.Course_Title)
-        courseTypeTv.setText(chapterTitle)
+        val student_typeTv=convertView!!.findViewById<TextView>(R.id.student_type)
+        student_typeTv.setText(chapterTitle)
         return convertView
     }
 
@@ -70,9 +76,9 @@ class Course_Type_Adapter internal constructor(private val context:Context,priva
         if (convertView==null) {
             val inflater =
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            convertView = inflater.inflate(R.layout.course_type_child, null)
+            convertView = inflater.inflate(R.layout.after_graduation_child, null)
         }
-        val courseNameTv=convertView!!.findViewById<TextView>(R.id.Sub_Courses)
+        val courseNameTv=convertView!!.findViewById<TextView>(R.id.future_options)
         courseNameTv.setText(TopicTitle)
         return convertView
     }

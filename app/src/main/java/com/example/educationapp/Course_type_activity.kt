@@ -26,22 +26,20 @@ class Course_type_activity : AppCompatActivity() {
 
         val main = MainActivity()
         val jsonString = main.getJSONFromAssets(this,"CourseTypes.json")
-        var gson = Gson()
+        val gson = Gson()
         val course_Type_Model = gson.fromJson(
             jsonString,
             CourseTypeListClass::class.java
         )
-        var firstlist:ArrayList<String> = ArrayList<String>()
-        var topiclist:HashMap<String,ArrayList<String>> = HashMap()
+        val firstlist:ArrayList<String> = ArrayList<String>()
+        val topiclist:HashMap<String,ArrayList<String>> = HashMap()
         try{
             var i:Int=0
             for(i in 0 until course_Type_Model.data[0].courses.size) {
                 firstlist.add(course_Type_Model.data[0].courses[i].name)
-                var slist:ArrayList<String> = course_Type_Model.data[0].courses[i].course_name
+                val slist:ArrayList<String> = course_Type_Model.data[0].courses[i].course_name
                 topiclist[firstlist[i]]=slist
             }
-
-
         }catch (ex: IOException){
             ex.printStackTrace()
         }
