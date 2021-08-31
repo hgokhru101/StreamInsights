@@ -24,26 +24,30 @@ class MainActivity : AppCompatActivity() {
             actionBar.title="What Next?"
         }
 
-        button1.setOnClickListener {
+        button1.setOnClickListener{
+            val intent =Intent(this,talent_test_activity::class.java)
+            startActivity(intent)
+        }
+
+        button3.setOnClickListener{
+            val intent =Intent(this,after_intermediate_activity::class.java)
+            startActivity(intent)
+        }
+        button5.setOnClickListener{
+            val intent =Intent(this,after_graduation_activity::class.java)
+            startActivity(intent)
+        }
+        button6.setOnClickListener {
             val intent = Intent(this, Course_type_activity::class.java)
             // start your next activity
             startActivity(intent)
         }
 
-        button2.setOnClickListener{
-            val intent2 =Intent(this,after_intermediate_activity::class.java)
-            startActivity(intent2)
-        }
-
-        button3.setOnClickListener{
-            val intent2 =Intent(this,after_graduation_activity::class.java)
-            startActivity(intent2)
-        }
-        val button1 = findViewById<Button>(R.id.button1)
-        val button2 = findViewById<Button>(R.id.button2)
-        val button3 = findViewById<Button>(R.id.button3)
-        val button4 = findViewById<Button>(R.id.button4)
-        val button5 = findViewById<Button>(R.id.button5)
+//        val button1 = findViewById<Button>(R.id.button1)
+//        val button2 = findViewById<Button>(R.id.button2)
+//        val button3 = findViewById<Button>(R.id.button3)
+//        val button4 = findViewById<Button>(R.id.button4)
+//        val button5 = findViewById<Button>(R.id.button5)
 
 //        button1.setOnClickListener(this)
 //        button2.setOnClickListener(this)
