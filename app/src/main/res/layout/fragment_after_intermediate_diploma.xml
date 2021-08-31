@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
-        android:textDirection="rtl"
+        android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Diploma"
         android:paddingStart="5dp"
         tools:ignore="RtlSymmetry" />

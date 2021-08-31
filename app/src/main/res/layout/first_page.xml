@@ -21,7 +21,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/button1"
                     android:text="Talent Test at Glance"
-                    android:background="@color/lightblue"
+
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:singleLine="false"
@@ -36,7 +36,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/button2"
                     android:text="After 10th"
-                    android:background="@color/lightblue"
+
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:singleLine="false"
@@ -58,7 +58,6 @@
                     android:id="@+id/button3"
                     android:text="After Intermediate"
                     android:textSize="18sp"
-                    android:background="@color/lightblue"
                     android:gravity="center|bottom"
                     android:singleLine="false"
                     android:paddingBottom="10dp" />
@@ -73,7 +72,6 @@
                 <Button android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button4"
-                    android:background="@color/lightblue"
                     android:text="Exams After Intermediate"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
@@ -96,7 +94,7 @@
                     android:id="@+id/button5"
                     android:text="After Graduation"
                     android:textSize="18sp"
-                    android:background="@color/lightblue"
+
                     android:gravity="center|bottom"
                     android:singleLine="false"
                     android:paddingBottom="10dp" />
@@ -114,7 +112,7 @@
                     android:text="Course Types"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
-                    android:background="@color/lightblue"
+
                     android:singleLine="false"
                     android:paddingBottom="10dp" />
                 <ImageView android:layout_width="wrap_content"

@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/backgroundColor2"
     tools:context=".after_intermediate_engg">
 
     <!-- TODO: Update blank fragment layout -->
@@ -32,9 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
-        android:textDirection="rtl"
+        android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Engg"
-        android:paddingStart="5dp"
-        tools:ignore="RtlSymmetry" />
+        android:paddingStart="5dp"/>
 
 </LinearLayout>

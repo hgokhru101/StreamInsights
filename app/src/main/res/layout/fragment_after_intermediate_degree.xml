@@ -26,7 +26,7 @@
     <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textDirection="rtl"
+        android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Degree"/>
 
 </FrameLayout>

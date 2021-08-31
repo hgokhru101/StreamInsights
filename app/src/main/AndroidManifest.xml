@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".talent_test_activity" >
+        <activity android:name=".talent_test_activity"
+            android:parentActivityName=".MainActivity">
         </activity>
-        <activity android:name=".after_graduation_activity" />
+        <activity android:name=".after_graduation_activity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".after_intermediate_activity"
             android:exported="true"

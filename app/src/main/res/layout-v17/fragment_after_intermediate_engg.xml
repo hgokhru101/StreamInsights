@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/backgroundColor2"
-    tools:context=".AfterIntFragment1">
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -32,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
-        android:textDirection="rtl"
+        android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Engg"
         android:paddingStart="5dp" />
 
