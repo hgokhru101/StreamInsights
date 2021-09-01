@@ -1,6 +1,8 @@
 package com.example.educationapp
 
 import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
@@ -8,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 data class first_page_adapter(var title_icon:List<FirstPage>, var activity: Activity) : BaseAdapter(){
+
 
     override fun getItem(position: Int): Any {
         return title_icon.get(position)
@@ -30,6 +33,13 @@ data class first_page_adapter(var title_icon:List<FirstPage>, var activity: Acti
         title.text= title_icon.get(position).title
         val title_pic=title_icon.get(position).img_icon
         img_icon.setImageResource(title_pic)
+
+
+        img_icon.setOnClickListener {
+            val intent =Intent(activity,after_intermediate_activity::class.java)
+            view.context.startActivity(intent)
+        }
+
         return view
     }
 

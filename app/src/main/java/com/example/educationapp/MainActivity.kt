@@ -61,6 +61,9 @@ class MainActivity : AppCompatActivity() {
         addLangData()
         adapter = first_page_adapter(title_icon, this)
         gv_first_page?.adapter = adapter
+
+//        gv_first_page.setOnItemClickListener { parent, view, position, id ->  }
+
         Toast.makeText(this, "Welcome!!", Toast.LENGTH_SHORT).show()
         Log.d("Main Activity", "Size:")
         gv_first_page!!.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->

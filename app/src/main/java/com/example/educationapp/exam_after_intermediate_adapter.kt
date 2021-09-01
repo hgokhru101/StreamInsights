@@ -4,57 +4,37 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.talent_test_data_presentation.view.*
 
-class exam_after_intermediate_adapter (val context: Context, val items: ArrayList<TalentExamClass>) :
-    RecyclerView.Adapter<talent_test_adapter.ViewHolder>() {
+class exam_after_intermediate_adapter (val context: Context, val testname: ArrayList<ExamAfterIntermediateExamClass>) :
+    RecyclerView.Adapter<exam_after_intermediate_adapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
-            LayoutInflater.from(context).inflate(
-                R.layout.talent_test_data_presentation,
-                parent,
-                false
-            )
-        )
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): exam_after_intermediate_adapter.ViewHolder {
+        val itemView= LayoutInflater.from(parent.context).inflate(R.layout.exams_after_intermediate_card, parent, false)
+        return ViewHolder(itemView)
     }
 
-    /**
-     * Binds each item in the ArrayList to a view
-     *
-     * Called when RecyclerView needs a new {@link ViewHolder} of the given type to represent
-     * an item.
-     *
-     * This new ViewHolder should be constructed with a new View that can represent the items
-     * of the given type. You can either create a new View manually or inflate it from an XML
-     * layout file.
-     */
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val item = items.get(position)
-
-        holder.tt_testname.text = item.test_name
-        holder.tt_eligibility.text = item.eligibility
-        holder.tt_syllabus.text = item.syllabus
-        holder.tt_website.text = item.website
-    }
-
-    /**
-     * Gets the number of items in the list
-     */
     override fun getItemCount(): Int {
-        return items.size
+        return testname.size
     }
 
-    /**
-     * A ViewHolder describes an item view and metadata about its place within the RecyclerView.
-     */
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = testname[position]
+
+        holder.af_test_name.text=item.test_name
+        holder.af_purpose.text=item.Purpose
+    }
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        // Holds the TextView that will add each item to
-        val tt_testname = view.tt_test_name
-        val tt_eligibility = view.tt_eligibility
-        val tt_syllabus = view.tt_syllabus
-        val tt_website = view.tt_website
+        val af_test_name=view.findViewById<TextView>(R.id.af_test_name)
+        val af_purpose=view.findViewById<TextView>(R.id.af_purpose)
+
     }
 }
