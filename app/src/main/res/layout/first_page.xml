@@ -3,8 +3,13 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:orientation="horizontal">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/img_icon"
+        android:layout_margin="20dp">
 
-
+    </ImageView>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -16,12 +21,6 @@
         android:textSize="18sp"
         android:layout_alignStart="@+id/img_icon"
         android:layout_marginStart="10dp" />
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:id="@+id/img_icon"
-        android:layout_margin="20dp" />
 
 </RelativeLayout>
 <!--<?xml version="1.0" encoding="utf-8"?>-->

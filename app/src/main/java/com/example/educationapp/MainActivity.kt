@@ -63,6 +63,33 @@ class MainActivity : AppCompatActivity() {
         gv_first_page?.adapter = adapter
         Toast.makeText(this, "Welcome!!", Toast.LENGTH_SHORT).show()
         Log.d("Main Activity", "Size:")
+        gv_first_page!!.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
+            when (position) {
+                0 -> {
+                    val intent =Intent(this,talent_test_activity::class.java)
+                    startActivity(intent)
+                }
+                1 -> {
+
+                }
+                2 -> {
+                    val intent =Intent(this,after_intermediate_activity::class.java)
+                    startActivity(intent)
+                }
+                3 -> {
+
+                }
+                4 -> {
+                    val intent =Intent(this,after_graduation_activity::class.java)
+                    startActivity(intent)
+                }
+                5 -> {
+                    val intent = Intent(this, Course_type_activity::class.java)
+                    // start your next activity
+                    startActivity(intent)
+                }
+            }
+        })
     }
 
     private fun addLangData() {
