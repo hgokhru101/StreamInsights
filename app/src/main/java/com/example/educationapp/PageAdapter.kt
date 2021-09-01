@@ -26,11 +26,11 @@ class Exams_AfterInt_PageAdapter(fm: FragmentManager, var tabcount: Int) : Fragm
     override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> return exams_after_intermediate_engg()
-//            1 -> return exams_after_intermediate_medical()
-//            2 -> return exams_after_intermediate_nda()
-//            3 -> return exams_after_intermediate_law()
-//            4 -> return exams_after_intermediate_management()
-//            5 -> return exams_after_intermediate_fashion()
+            1 -> return exams_after_intermediate_medical()
+            2 -> return exams_after_intermediate_nda()
+            3 -> return exams_after_intermediate_law()
+            4 -> return exams_after_intermediate_management()
+            5 -> return exams_after_intermediate_fashion()
         }
         return after_intermediate_engg()
     }

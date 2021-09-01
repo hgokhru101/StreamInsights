@@ -13,7 +13,8 @@ import java.io.IOException
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class exams_after_intermediate_engg : Fragment() {
+class exams_after_intermediate_fashion : Fragment() {
+
     private var param1: String? = null
     private var param2: String? = null
 
@@ -36,13 +37,14 @@ class exams_after_intermediate_engg : Fragment() {
             jsonString,
             ExamAfterIntermediateListClass::class.java
         )
-        val view=inflater.inflate(R.layout.fragment_exams_after_intermediate_engg, container, false)
+        val view=inflater.inflate(R.layout.fragment_exams_after_intermediate_fashion, container, false)
         val entrance_list:ArrayList<ExamAfterIntermediateExamClass> =ArrayList<ExamAfterIntermediateExamClass>()
         val recyler_view_exams=view.findViewById<RecyclerView>(R.id.recycler_view_exams)
+
         try{
             var i:Int=0
-            for(i in 0 until exam_after_Intermediate_Model.data[0].streams[0].entrance_exams.size) {
-                entrance_list.add(exam_after_Intermediate_Model.data[0].streams[0].entrance_exams[i])
+            for(i in 0 until exam_after_Intermediate_Model.data[0].streams[5].entrance_exams.size) {
+                entrance_list.add(exam_after_Intermediate_Model.data[0].streams[5].entrance_exams[i])
             }
         }catch (ex: IOException){
             ex.printStackTrace()
@@ -51,11 +53,10 @@ class exams_after_intermediate_engg : Fragment() {
         recyler_view_exams.layoutManager = LinearLayoutManager(context)
         return view
     }
-
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            exams_after_intermediate_engg().apply {
+            exams_after_intermediate_fashion().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
