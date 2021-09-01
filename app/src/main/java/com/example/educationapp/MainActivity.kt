@@ -80,6 +80,8 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 3 -> {
+                    val intent=Intent(this,exams_after_intermediate_activity::class.java)
+                    startActivity(intent)
 
                 }
                 4 -> {

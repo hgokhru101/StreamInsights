@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import java.io.IOException
@@ -61,6 +62,7 @@ class exams_after_intermediate_engg : Fragment() {
             ex.printStackTrace()
         }
         recyler_view_exams.adapter=exam_after_intermediate_adapter(activity!!,test_name)
+        recyler_view_exams.layoutManager = LinearLayoutManager(context)
 
 //        listadapter= Course_Type_Adapter(activity!!,degree_name,deg_cour_map)
 

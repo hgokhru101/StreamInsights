@@ -33,11 +33,11 @@ class exams_after_intermediate_activity : AppCompatActivity() {
         val data = exam_after_Intermediate_Model.data[0].streams
 
 //        b1.setOnClickListener()
-        val tab_1=findViewById<TabItem>(R.id.tab_1)
-        val tab_2=findViewById<TabItem>(R.id.tab_2)
-        val tabLayout=findViewById<TabLayout>(R.id.tablayout)
+//        val tab_1=findViewById<TabItem>(R.id.tab_1)
+//        val tab_2=findViewById<TabItem>(R.id.tab_2)
+        val tabLayout=findViewById<TabLayout>(R.id.tablayout2)
 
-        val viewpager=findViewById<ViewPager>(R.id.viewpager)
+        val viewpager=findViewById<ViewPager>(R.id.viewpager2)
 
         pageadapter= Exams_AfterInt_PageAdapter(supportFragmentManager,tabLayout.tabCount)
         viewpager.adapter=pageadapter
