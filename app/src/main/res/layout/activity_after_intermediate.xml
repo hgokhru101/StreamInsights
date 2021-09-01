@@ -13,6 +13,7 @@
         android:id="@+id/tablayout"
         app:tabTextColor="@color/white"
         android:background="#532BFF"
+        app:tabMode="scrollable"
         app:tabTextAppearance="@style/TabLayoutStyle">
 
 
