@@ -222,3 +222,8 @@ class AfterTenCourseClass{
     }
 }
 //After Tenth Ends
+
+class FirstPage {
+    var title: String = ""
+    var img_icon: Int = 0
+}

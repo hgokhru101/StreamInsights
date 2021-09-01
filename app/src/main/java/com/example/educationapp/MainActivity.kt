@@ -2,46 +2,48 @@ package com.example.educationapp
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
+import android.widget.AdapterView.OnItemClickListener
+import android.widget.GridView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.io.IOException
-import kotlinx.android.synthetic.main.first_page.*
+
 
 class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
 //    private lateinit var listviewadapter:Course_Type_Adapter
 
-
+    var gv_first_page: GridView? = null
+    var title_icon: ArrayList<FirstPage> = ArrayList<FirstPage>()
+    var adapter: first_page_adapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.first_page)
-
+        setContentView(R.layout.activity_main)
        val actionBar=supportActionBar
         if(actionBar!=null){
             actionBar.title="What Next?"
         }
 
-        button1.setOnClickListener{
-            val intent =Intent(this,talent_test_activity::class.java)
-            startActivity(intent)
-        }
-
-        button3.setOnClickListener{
-            val intent =Intent(this,after_intermediate_activity::class.java)
-            startActivity(intent)
-        }
-        button5.setOnClickListener{
-            val intent =Intent(this,after_graduation_activity::class.java)
-            startActivity(intent)
-        }
-        button6.setOnClickListener {
-            val intent = Intent(this, Course_type_activity::class.java)
-            // start your next activity
-            startActivity(intent)
-        }
+//        button1.setOnClickListener{
+//            val intent =Intent(this,talent_test_activity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        button3.setOnClickListener{
+//            val intent =Intent(this,after_intermediate_activity::class.java)
+//            startActivity(intent)
+//        }
+//        button5.setOnClickListener{
+//            val intent =Intent(this,after_graduation_activity::class.java)
+//            startActivity(intent)
+//        }
+//        button6.setOnClickListener {
+//            val intent = Intent(this, Course_type_activity::class.java)
+//            // start your next activity
+//            startActivity(intent)
+//        }
 
 //        val button1 = findViewById<Button>(R.id.button1)
 //        val button2 = findViewById<Button>(R.id.button2)
@@ -55,9 +57,46 @@ class MainActivity : AppCompatActivity() {
 //        button4.setOnClickListener(this)
 //        button5.setOnClickListener(this)
 
-        Toast.makeText(this,"Welcome!!",Toast.LENGTH_SHORT).show()
-        Log.d("Main Activity","Size:")
+        gv_first_page= findViewById<GridView>(R.id.gv_first_page) as GridView
+        addLangData()
+        adapter = first_page_adapter(title_icon, this)
+        gv_first_page?.adapter = adapter
+        Toast.makeText(this, "Welcome!!", Toast.LENGTH_SHORT).show()
+        Log.d("Main Activity", "Size:")
     }
+
+    private fun addLangData() {
+        val talent_test = FirstPage()
+        talent_test.title = "Talent Test at Glance"
+        talent_test.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(talent_test)
+
+        val after_tenth = FirstPage()
+        after_tenth.title = "After 10th"
+        after_tenth.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(after_tenth)
+
+        val after_intermediate = FirstPage()
+        after_intermediate.title = "After Intermediate"
+        after_intermediate.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(after_intermediate)
+
+        val exam_after_intermediate = FirstPage()
+        exam_after_intermediate.title = "Exam After Intermediate"
+        exam_after_intermediate.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(exam_after_intermediate)
+
+        val after_graduation = FirstPage()
+        after_graduation.title = "After Graduation"
+        after_graduation.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(after_graduation)
+
+        val course_types = FirstPage()
+        course_types.title = "Course Types"
+        course_types.img_icon=R.drawable.ic_school_black_24dp
+        title_icon.add(course_types)
+    }
+
 
 //    override fun onClick(v: View) {
 //        button1.setOnClickListener(this)
@@ -73,8 +112,8 @@ class MainActivity : AppCompatActivity() {
 //        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 //        var TitleName= ArrayList<String>()
 //        var Exams= ArrayList<String>()
-//        var titlename= ArrayList<String>()
-//        var test_name= ArrayList<String>()
+//        var titletitle= ArrayList<String>()
+//        var test_title= ArrayList<String>()
 //        var eligibility= ArrayList<String>()
 //        var syllabus= ArrayList<String>()
 //        var website_link= ArrayList<String>()
@@ -134,7 +173,7 @@ class MainActivity : AppCompatActivity() {
 //                var j=0
 //               for(j in 0 until examarray.length()){
 //                   val examDetail = examarray.getJSONObject(j)
-//                   test_name.add(examDetail.getString("test_name"))
+//                   test_title.add(examDetail.getString("test_title"))
 //                   eligibility.add(examDetail.getString("eligibility"))
 //                   syllabus.add(examDetail.getString("syllabus"))
 //                   website_link.add(examDetail.getString("website"))
@@ -155,8 +194,8 @@ class MainActivity : AppCompatActivity() {
 //            var i:Int=0
 //            for(i in 0 until Course_Type_Model.data[0].courses.size) {
 //                var Slist:ArrayList<String>
-//                Firstlist.add(Course_Type_Model.data[0].courses[i].name)
-//                Slist=Course_Type_Model.data[0].courses[i].course_name
+//                Firstlist.add(Course_Type_Model.data[0].courses[i].title)
+//                Slist=Course_Type_Model.data[0].courses[i].course_title
 //                Topiclist[Firstlist[i]]=Slist
 //            }
 //
@@ -182,9 +221,9 @@ class MainActivity : AppCompatActivity() {
 //        var i:Int=0
 //        for(i in 0 until Course_Type_Model.data[0].courses.size) {
 //            var Slist:ArrayList<String>
-//            Flist.add(Course_Type_Model.data[0].courses[i].name)
-////            var Flist=Course_Type_Model.data[0].courses[i].name
-//            Slist=Course_Type_Model.data[0].courses[i].course_name
+//            Flist.add(Course_Type_Model.data[0].courses[i].title)
+////            var Flist=Course_Type_Model.data[0].courses[i].title
+//            Slist=Course_Type_Model.data[0].courses[i].course_title
 ////                (Slist as ArrayList<>)
 //            Topiclist[Flist[i]]=Slist
 //    }
@@ -192,10 +231,10 @@ class MainActivity : AppCompatActivity() {
 //    }
 
 
-     public fun getJSONFromAssets(context: Context,filename:String): String? {
+     public fun getJSONFromAssets(context: Context, filetitle: String): String? {
         var json: String? = null
         try {
-            val myUsersJSONFile = context.assets.open(filename)
+            val myUsersJSONFile = context.assets.open(filetitle)
             val size = myUsersJSONFile.available()
             val buffer = ByteArray(size)
             myUsersJSONFile.read(buffer)
