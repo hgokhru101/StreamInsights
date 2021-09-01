@@ -24,7 +24,7 @@
         <entry key="app/src/main/res/layout/course_type_1.xml" value="0.2" />
         <entry key="app/src/main/res/layout/course_type_child.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/course_type_parent.xml" value="0.1578125" />
-        <entry key="app/src/main/res/layout/exams_after_intermediate_card.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/exams_after_intermediate_card.xml" value="0.25" />
         <entry key="app/src/main/res/layout/first_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/frag_after_int2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_after_int1.xml" value="0.2" />
@@ -34,7 +34,7 @@
         <entry key="app/src/main/res/layout/fragment_after_intermediate_medical.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_nda.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_teach.xml" value="0.1578125" />
-        <entry key="app/src/main/res/layout/fragment_exams_after_intermediate_engg.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_exams_after_intermediate_engg.xml" value="0.22" />
         <entry key="app/src/main/res/layout/rawlayout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/talent_test_data_presentation.xml" value="0.1578125" />
       </map>
