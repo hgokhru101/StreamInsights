@@ -33,6 +33,7 @@
         android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Diploma"
         android:paddingStart="5dp"
+        android:groupIndicator="@null"
         tools:ignore="RtlSymmetry" />
 
 </FrameLayout>

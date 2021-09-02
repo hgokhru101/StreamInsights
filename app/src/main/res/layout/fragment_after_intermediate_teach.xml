@@ -32,6 +32,7 @@
         android:paddingLeft="5dp"
         android:layoutDirection="rtl"
         android:id="@+id/elist_Int_Teach"
+        android:groupIndicator="@null"
         android:paddingStart="5dp"
         tools:ignore="RtlSymmetry" />
 
