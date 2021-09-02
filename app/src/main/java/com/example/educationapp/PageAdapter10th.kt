@@ -15,6 +15,11 @@ class PageAdapter10th(fm: FragmentManager, var tabcount: Int) : FragmentPagerAda
 //            5 -> return after_intermediate_diploma()
             0 -> return after_10th_intermediate()
             1 -> return after_10th_polytechnic()
+            2 -> return after_10th_iiit()
+            3 -> return after_10th_iti()
+            4 -> return after_10th_paramedical()
+            5 -> return after_10th_short_term()
+            6 -> return after_10th_others()
         }
         return after_10th_intermediate()
     }

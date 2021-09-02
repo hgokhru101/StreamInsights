@@ -28,8 +28,13 @@
         <entry key="app/src/main/res/layout/exams_after_intermediate_card.xml" value="0.25" />
         <entry key="app/src/main/res/layout/first_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/frag_after_int2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_iiit.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_10th_intermediate.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_iti.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_others.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_paramedical.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_10th_polytechnic.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_short_term.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_int1.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_degree.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_diploma.xml" value="0.1578125" />
