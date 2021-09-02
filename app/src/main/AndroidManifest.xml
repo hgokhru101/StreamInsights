@@ -28,6 +28,8 @@
             android:name=".Course_type_activity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".after_10th_activity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

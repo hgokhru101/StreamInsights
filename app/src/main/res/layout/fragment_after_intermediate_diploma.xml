@@ -17,14 +17,13 @@
 <!--        tools:ignore="RtlSymmetry" />-->
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
         android:text="@string/eligibility"
         android:textSize="20sp"
         android:id="@+id/eligibility"
-        android:paddingStart="5dp"
-        tools:ignore="RtlSymmetry" />
+        android:paddingStart="5dp" />
 
     <ExpandableListView
         android:layout_width="wrap_content"

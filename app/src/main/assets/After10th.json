@@ -29,7 +29,12 @@
                             ]
                         }
                     ],
-                    "examination": []
+                    "examination": [
+                        {
+                            "exam_name": "",
+                            "website": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Polytechnic",

@@ -8,7 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_slack_new_logo.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout-v17/fragment_after_intermediate_engg.xml" value="0.1578125" />
-        <entry key="app/src/main/res/layout/activity_after10th.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/activity_after10th.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_after_graduation_activity.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/activity_after_intermediate.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_course_type.xml" value="0.15" />
@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/after10th_child.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/after10th_poly_child.xml" value="0.25" />
         <entry key="app/src/main/res/layout/after_graduation_child.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/after_graduation_parent.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/course_type.xml" value="0.2" />
@@ -27,6 +28,8 @@
         <entry key="app/src/main/res/layout/exams_after_intermediate_card.xml" value="0.25" />
         <entry key="app/src/main/res/layout/first_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/frag_after_int2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_intermediate.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_after_10th_polytechnic.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_int1.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_degree.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/fragment_after_intermediate_diploma.xml" value="0.1578125" />
@@ -40,7 +43,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

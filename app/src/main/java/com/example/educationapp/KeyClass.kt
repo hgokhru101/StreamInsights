@@ -208,8 +208,10 @@ class AfterTenStreamClass{
     var duration :String = ""
     @SerializedName("course")
     val course : ArrayList<AfterTenCourseClass> = ArrayList()
+    @SerializedName("examination")
+    val examination:ArrayList<exams> =ArrayList<exams>()
     override fun toString(): String {
-        return "AfterTenStreamClass(name='$name', duration='$duration', course=$course)"
+        return "AfterTenStreamClass(name='$name', duration='$duration', course=$course, examination=$examination)"
     }
 }
 class AfterTenCourseClass{
@@ -219,6 +221,22 @@ class AfterTenCourseClass{
     var sub_course : ArrayList<String> = ArrayList()
     override fun toString(): String {
         return "AfterTenCourseClass(name='$name', sub_course=$sub_course)"
+    }
+}
+
+class exams{
+    @SerializedName("exam_name")
+    var exam_name:String=""
+    @SerializedName("website")
+    var website:String=""
+    @SerializedName("purpose")
+    var purpose:String=""
+    @SerializedName("eligibility")
+    var eligibility=""
+    @SerializedName("application_mode")
+    var application_mode=""
+    override fun toString(): String {
+        return "exams(exam_name='$exam_name', website=$website, eligibility=$eligibility),application_mode=$application_mode"
     }
 }
 //After Tenth Ends

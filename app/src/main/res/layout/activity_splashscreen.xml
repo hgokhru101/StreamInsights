@@ -8,11 +8,10 @@
     tools:context=".splash_screen_activity">
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_slack_new_logo">
-    </ImageView>
+        android:src="@drawable/ic_slack_new_logo"></ImageView>
 
     <TextView
         android:id="@+id/text"

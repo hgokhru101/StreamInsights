@@ -54,7 +54,8 @@ class after_intermediate_engg : Fragment() {
         try{
             var i:Int=0
             for(i in 0 until after_Intermediate_Model.data[0].streams[0].course.size) {
-                degree_name.add(after_Intermediate_Model.data[0].streams[0].course[i].degree_name)
+                degree_name.add(after_Intermediate_Model.data[0].streams[0].course[i].degree_name
+                + " [" + after_Intermediate_Model.data[0].streams[0].course[i].course_duration + "]")
                 val sub_course:ArrayList<String> = after_Intermediate_Model.data[0].streams[0].course[i].sub_course
                 deg_cour_map[degree_name[i]]=sub_course
             }

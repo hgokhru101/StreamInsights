@@ -73,7 +73,8 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 1 -> {
-
+                    val intent=Intent(this,after_10th_activity::class.java)
+                    startActivity(intent)
                 }
                 2 -> {
                     val intent =Intent(this,after_intermediate_activity::class.java)
