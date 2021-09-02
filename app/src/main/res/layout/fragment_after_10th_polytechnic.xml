@@ -7,6 +7,12 @@
     tools:context=".after_10th_polytechnic">
 
     <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_polytechnic"
+        android:orientation="vertical" />
+
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,11 +20,7 @@
         android:id="@+id/elist_10th_poly"/>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recycler_view_polytechnic"
-        android:orientation="vertical" />
+
 
     </LinearLayout>
 
