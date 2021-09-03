@@ -65,7 +65,6 @@ class MainActivity : AppCompatActivity() {
 //        gv_first_page.setOnItemClickListener { parent, view, position, id ->  }
 
         Toast.makeText(this, "Welcome!!", Toast.LENGTH_SHORT).show()
-        Log.d("Main Activity", "Size:")
         gv_first_page!!.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
             when (position) {
                 0 -> {
@@ -101,22 +100,22 @@ class MainActivity : AppCompatActivity() {
     private fun addLangData() {
         val talent_test = FirstPage()
         talent_test.title = "Talent Test at Glance"
-        talent_test.img_icon=R.drawable.ic_school_black_24dp
+        talent_test.img_icon=R.drawable.ic_talent_test
         title_icon.add(talent_test)
 
         val after_tenth = FirstPage()
         after_tenth.title = "After 10th"
-        after_tenth.img_icon=R.drawable.ic_school_black_24dp
+        after_tenth.img_icon=R.drawable.ic_after10th
         title_icon.add(after_tenth)
 
         val after_intermediate = FirstPage()
         after_intermediate.title = "After Intermediate"
-        after_intermediate.img_icon=R.drawable.ic_school_black_24dp
+        after_intermediate.img_icon=R.drawable.ic_afterintermediate
         title_icon.add(after_intermediate)
 
         val exam_after_intermediate = FirstPage()
-        exam_after_intermediate.title = "Exam After Intermediate"
-        exam_after_intermediate.img_icon=R.drawable.ic_school_black_24dp
+        exam_after_intermediate.title = "Exams After Intermediate"
+        exam_after_intermediate.img_icon=R.drawable.ic_exam
         title_icon.add(exam_after_intermediate)
 
         val after_graduation = FirstPage()
@@ -126,7 +125,7 @@ class MainActivity : AppCompatActivity() {
 
         val course_types = FirstPage()
         course_types.title = "Course Types"
-        course_types.img_icon=R.drawable.ic_school_black_24dp
+        course_types.img_icon=R.drawable.ic_coursetypes
         title_icon.add(course_types)
     }
 

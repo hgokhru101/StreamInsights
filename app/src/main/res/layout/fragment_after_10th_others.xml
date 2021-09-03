@@ -10,6 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:id="@+id/elist_10th_other"/>
+        android:id="@+id/elist_10th_other"
+        android:groupIndicator="@null"
+        />
 
 </FrameLayout>

@@ -3,6 +3,7 @@ package com.example.educationapp
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
@@ -29,16 +30,10 @@ data class first_page_adapter(var title_icon:List<FirstPage>, var activity: Acti
 
         val title = view.findViewById<TextView>(R.id.title) as TextView
         val img_icon=view.findViewById<ImageView>(R.id.img_icon)
-
+        title.setTextColor(Color.parseColor("#FFFFFF"))
         title.text= title_icon.get(position).title
         val title_pic=title_icon.get(position).img_icon
         img_icon.setImageResource(title_pic)
-
-
-        img_icon.setOnClickListener {
-            val intent =Intent(activity,after_intermediate_activity::class.java)
-            view.context.startActivity(intent)
-        }
 
         return view
     }
