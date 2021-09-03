@@ -5,22 +5,49 @@
     android:layout_height="match_parent"
     tools:context=".after_intermediate_degree">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Eligibility"
-        android:background="@color/white"
-        android:textSize="20sp"
-        android:paddingLeft="5dp"
-        android:id="@+id/eligibility"
-        android:paddingStart="5dp"
-        tools:ignore="RtlSymmetry" />
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:text="Eligibility:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:id="@+id/eligibility"
+            android:paddingStart="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
 
     <ExpandableListView
         android:id="@+id/elist_Int_Degree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl" />
+
+    </LinearLayout>
 
 </FrameLayout>

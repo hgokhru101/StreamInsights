@@ -6,7 +6,9 @@
     android:orientation="vertical"
     tools:context=".after_intermediate_engg">
 
-    <!-- TODO: Update blank fragment layout -->
+<!--    This layout is useless-->
+
+    <!-- TODO: Update useless blank fragment layout -->
 <!--    <TextView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -16,16 +18,36 @@
 <!--        android:id="@+id/duration"-->
 <!--        android:paddingStart="5dp"-->
 <!--        tools:ignore="RtlSymmetry" />-->
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:text="@string/eligibility"
-        android:textSize="20sp"
-        android:id="@+id/eligibility"
-        android:paddingStart="5dp"
-        tools:ignore="RtlSymmetry" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="Eligibility:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:id="@+id/eligibility"
+            android:paddingStart="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
 
     <ExpandableListView
         android:layout_width="wrap_content"

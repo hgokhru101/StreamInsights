@@ -15,6 +15,7 @@
         android:id="@+id/gv_first_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:numColumns="2"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,6 +63,8 @@ class after_10th_polytechnic : Fragment() {
         }catch (ex: IOException){
             ex.printStackTrace()
         }
+        val text_int=view.findViewById<TextView>(R.id.text_after10th)
+        text_int.text=after_10th_Model.data[0].streams[1].duration
 //        val text_exam_name=view.findViewById<TextView>(R.id.text_exam_name)
 //        val text_website=view.findViewById<TextView>(R.id.Text_website)
 

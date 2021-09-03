@@ -59,7 +59,7 @@ class after_intermediate_teach : Fragment() {
         listadapter= Course_Type_Adapter(activity!!,degree_name,deg_cour_map)
 
 //        view.findViewById<TextView>(R.id.duration).text="Duration: "+after_Intermediate_Model.data[0].streams[4].duration
-        view.findViewById<TextView>(R.id.eligibility).text="Eligibility: "+after_Intermediate_Model.data[0].streams[4].eligible
+        view.findViewById<TextView>(R.id.eligibility).text=" "+after_Intermediate_Model.data[0].streams[4].eligible
         view.findViewById<ExpandableListView>(R.id.elist_Int_Teach).setAdapter(listadapter)
         return view
 

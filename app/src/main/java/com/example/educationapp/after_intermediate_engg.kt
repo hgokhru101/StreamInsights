@@ -67,7 +67,7 @@ class after_intermediate_engg : Fragment() {
 
 
 //        view.findViewById<TextView>(R.id.duration).text="Duration: "+after_Intermediate_Model.data[0].streams[0].duration
-        view.findViewById<TextView>(R.id.eligibility).text="Eligibility: "+after_Intermediate_Model.data[0].streams[0].eligible
+        view.findViewById<TextView>(R.id.eligibility).text=" "+after_Intermediate_Model.data[0].streams[0].eligible
         view.findViewById<ExpandableListView>(R.id.elist_Int_Engg).setAdapter(listadapter)
         return view
     }

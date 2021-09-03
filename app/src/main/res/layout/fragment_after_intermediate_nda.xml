@@ -14,14 +14,40 @@
 <!--        android:id="@+id/duration"-->
 <!--        android:paddingStart="5dp"-->
 <!--        tools:ignore="RtlSymmetry" />-->
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:paddingLeft="5dp"
-        android:id="@+id/eligibility"
-        android:paddingStart="5dp"
-        tools:ignore="RtlSymmetry" />
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:paddingLeft="8dp"
+            android:text="Eligibility:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:id="@+id/eligibility"
+            android:paddingStart="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <ExpandableListView
         android:layout_width="wrap_content"
@@ -29,4 +55,6 @@
         android:layoutDirection="rtl"
         android:groupIndicator="@null"
         android:id="@+id/elist_Int_NDA"/>
+
+    </LinearLayout>
 </FrameLayout>

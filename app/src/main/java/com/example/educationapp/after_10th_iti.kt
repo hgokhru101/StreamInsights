@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
 
@@ -60,6 +61,8 @@ class after_10th_iti : Fragment() {
             ex.printStackTrace()
         }
 
+        val text_int=view.findViewById<TextView>(R.id.text_after10th)
+        text_int.text=after_10th_Model.data[0].streams[3].duration
 
         listadapter= Course_Type_Adapter(activity!!,course_name,course_map)
 
