@@ -38,19 +38,16 @@ class gallery_activity : AppCompatActivity() {
         val college_name_list:ArrayList<String> = ArrayList<String>()
         val image_url_list:ArrayList<String> = ArrayList<String>()
         try{
-            var i:Int=0
-            for(i in 0 until Gallery_Model.data[0].gallery.size) {
-                college_name_list.add(Gallery_Model.data[0].gallery[i].college_name)
-                image_url_list.add(Gallery_Model.data[0].gallery[i].image_url)
-            }
+//            var i:Int=0
+//            for(i in 0 until Gallery_Model.data[0].gallery.size) {
+//                college_name_list.add(Gallery_Model.data[0].gallery[i].college_name)
+//                image_url_list.add(Gallery_Model.data[0].gallery[i].image_url)
+//            }
+            //Changes needs to be made
+            val Item_Adapter = GalleryAdapter(applicationContext,Gallery_Model.data[0].gallery)
+
         }catch (ex: IOException){
             ex.printStackTrace()
         }
-        //Changes needs to be made
-        gallery_Adapter = GalleryAdapter(applicationContext,)
-        gallery_recyclerView.setLayoutManager(layoutManager)
-        gallery_recyclerView.setItemAnimator(DefaultItemAnimator())
-        gallery_recyclerView.setAdapter(gallery_Adapter)
-
     }
 }

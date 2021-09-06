@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.gallery_thumbnail.view.*
 import java.util.*
 
 
-class GalleryAdapter(val context: Context, val items: ArrayList<ImagesList>) : RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder>() {
+class GalleryAdapter(val context: Context, val items: ArrayList<ImagesGalleryClass>) : RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GalleryViewHolder {
         return GalleryViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.gallery_thumbnail, parent, false)
@@ -21,24 +21,25 @@ class GalleryAdapter(val context: Context, val items: ArrayList<ImagesList>) : R
     override fun onBindViewHolder(holder: GalleryViewHolder, position: Int) {
         val item = items.get(position)
         holder.college.text = item.college_name
+//        holder.images.text = item.image_url
+        val requestOptions: RequestOptions = RequestOptions()
+            .placeholder(R.drawable.ic_place_holder)
+            .error(R.drawable.ic_error)
+            .fitCenter()
+        Glide.with(context)
+            .setDefaultRequestOptions(requestOptions)
+            .load(images[position].getImageUrl())
+            .into(holder.img)
+    }
 
-//        val requestOptions: RequestOptions = RequestOptions()
-//            .placeholder(R.drawable.ic_place_holder)
-//            .error(R.drawable.ic_error)
-//            .fitCenter()
-//        Glide.with(context)
-//            .setDefaultRequestOptions(requestOptions)
-//            .load(image_url[position].getImageUrl())
-//            .into(holder.img)
+    override fun getItemCount(): Int {
+        return items.size
     }
 
     class GalleryViewHolder(view: View) :
         RecyclerView.ViewHolder(view) {
         val college = view.college_name
-        var images = view.images
+        var images = view.image_url
         }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
 }
