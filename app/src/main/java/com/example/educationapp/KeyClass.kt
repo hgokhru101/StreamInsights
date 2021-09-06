@@ -248,23 +248,23 @@ class FirstPage {
 
 class ImagesClass {
     @SerializedName("data")
-    var data : ArrayList<ImagesGalleryClass> = ArrayList()
+    var data : ArrayList<ImagesGalleryListClass> = ArrayList()
     override fun toString(): String {
         return "ImagesClass(data=$data)"
     }
 }
 
-class ImagesGalleryClass {
+class ImagesGalleryListClass {
     @SerializedName("title")
     var title:String = ""
     @SerializedName("gallery")
-    var gallery : ArrayList<ImagesList> = ArrayList()
+    var gallery : ArrayList<ImagesGalleryClass> = ArrayList()
     override fun toString(): String {
         return "ImagesGalleryClass(title='$title', gallery=$gallery)"
     }
 }
 
-class ImagesList{
+class ImagesGalleryClass{
     @SerializedName("college_name")
     var college_name : String = ""
     @SerializedName("image_url")
