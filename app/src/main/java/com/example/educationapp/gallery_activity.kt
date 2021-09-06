@@ -46,7 +46,8 @@ class gallery_activity : AppCompatActivity() {
         }catch (ex: IOException){
             ex.printStackTrace()
         }
-        gallery_Adapter = GalleryAdapter(applicationContext,college_name_list,image_url_list)
+        //Changes needs to be made
+        gallery_Adapter = GalleryAdapter(applicationContext,)
         gallery_recyclerView.setLayoutManager(layoutManager)
         gallery_recyclerView.setItemAnimator(DefaultItemAnimator())
         gallery_recyclerView.setAdapter(gallery_Adapter)
