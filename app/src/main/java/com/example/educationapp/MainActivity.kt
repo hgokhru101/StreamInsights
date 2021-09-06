@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         gv_first_page!!.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
             when (position) {
                 0 -> {
-                    val intent =Intent(this,talent_test_activity::class.java)
+                    val intent =Intent(this,gallery_activity::class.java)
                     startActivity(intent)
                 }
                 1 -> {

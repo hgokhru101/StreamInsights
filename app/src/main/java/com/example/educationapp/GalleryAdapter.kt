@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -21,15 +23,16 @@ class GalleryAdapter(val context: Context, val items: ArrayList<ImagesGalleryCla
     override fun onBindViewHolder(holder: GalleryViewHolder, position: Int) {
         val item = items.get(position)
         holder.college.text = item.college_name
-//        holder.images.text = item.image_url
+
+//        holder.images = item.image_url
         val requestOptions: RequestOptions = RequestOptions()
             .placeholder(R.drawable.ic_place_holder)
             .error(R.drawable.ic_error)
             .fitCenter()
         Glide.with(context)
             .setDefaultRequestOptions(requestOptions)
-            .load(images[position].getImageUrl())
-            .into(holder.img)
+            .load(item.image_url)
+            .into(holder.images)
     }
 
     override fun getItemCount(): Int {
@@ -38,8 +41,8 @@ class GalleryAdapter(val context: Context, val items: ArrayList<ImagesGalleryCla
 
     class GalleryViewHolder(view: View) :
         RecyclerView.ViewHolder(view) {
-        val college = view.college_name
-        var images = view.image_url
+        val college = view.college_name as TextView
+        var images = view.image_url as ImageView
         }
 
 }
