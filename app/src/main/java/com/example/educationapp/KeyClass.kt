@@ -245,3 +245,31 @@ class FirstPage {
     var title: String = ""
     var img_icon: Int = 0
 }
+
+class ImagesClass {
+    @SerializedName("data")
+    var data : ArrayList<ImagesGalleryClass> = ArrayList()
+    override fun toString(): String {
+        return "ImagesClass(data=$data)"
+    }
+}
+
+class ImagesGalleryClass {
+    @SerializedName("title")
+    var title:String = ""
+    @SerializedName("gallery")
+    var gallery : ArrayList<ImagesList> = ArrayList()
+    override fun toString(): String {
+        return "ImagesGalleryClass(title='$title', gallery=$gallery)"
+    }
+}
+
+class ImagesList{
+    @SerializedName("college_name")
+    var college_name : String = ""
+    @SerializedName("image_url")
+    var image_url : String = ""
+    override fun toString(): String {
+        return "ImagesList(college_name='$college_name', image_url='$image_url')"
+    }
+}

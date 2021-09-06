@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.educationapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,13 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exams_after_intermediate_activity"
+        <activity android:name=".gallery_activity" />
+        <activity
+            android:name=".exams_after_intermediate_activity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".talent_test_activity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".after_graduation_activity"
             android:exported="true"
@@ -28,8 +31,9 @@
             android:name=".Course_type_activity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".after_10th_activity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".after_10th_activity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

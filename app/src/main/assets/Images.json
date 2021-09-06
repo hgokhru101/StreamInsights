@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "Gallery",
+      "gallery": [
+        {
+          "college_name" : "All India Institute Of Medical Sciences, New Delhi",
+          "image_url" : "https://www.selectyouruniversity.com/images/indian-universities/all-india-institute-of-medical-science.jpg"
+
+        },
+        {
+          "college_name" : "Indian Institute of Technology Bombay",
+          "image_url" : "https://images.static-collegedunia.com/public/college_data/images/appImage/25703_IIT_New.jpg?tr=c-force"
+        },
+        {
+          "college_name" : "National Institute of Fashion Technology",
+          "image_url" : "https://images.shiksha.com/mediadata/images/1494313519phpnOP5CH.png"
+        },
+        {
+          "college_name" : "Indian Institute of Management Ahmedabad",
+          "image_url" : "https://cdn.archpaper.com/wp-content/uploads/2020/12/Louis_Kahn_Plaza_IIM_Ahmedabad-1280x720.jpg"
+        },
+        {
+          "college_name" : "Army War college",
+          "image_url" : "https://lh3.googleusercontent.com/proxy/bS6mchkAsWx8xdzXIeGpQNHXdAvdznd9ZW-0rVVTGjtQz1ejKdWDjFWRP7wNSYtG_vkeYmZzGqMP4tnEPUKSJ15d54xOz6e1kKEAj0IzFQDpnthqoUpvTtaMnmhMUfdLEy_GodbhHQQcJQjByxXTPSPxKnK9LWb6FMnKE3tPeupu_w"
+        },
+        {
+          "college_name" : "K. J. Somaiya College of Engineering",
+          "image_url" : "https://img.collegepravesh.com/2018/11/KJSCE-Mumbai.jpg"
+        }
+      ]
+    }
+  ]
+}
