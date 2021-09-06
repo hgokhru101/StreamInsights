@@ -9,7 +9,9 @@ import android.widget.GridView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.IOException
-
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 
 class MainActivity : AppCompatActivity() {
     //RecyclerView recyclerview;
@@ -68,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         gv_first_page!!.setOnItemClickListener(OnItemClickListener { parent, view, position, id ->
             when (position) {
                 0 -> {
-                    val intent =Intent(this,gallery_activity::class.java)
+                    val intent =Intent(this,talent_test_activity::class.java)
                     startActivity(intent)
                 }
                 1 -> {
@@ -97,7 +99,28 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun addLangData() {
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+
+        when(item.getItemId()) {
+            R.id.menu_icon -> {
+                val intent = Intent(this, gallery_activity::class.java)
+                startActivity(intent)
+            }
+        }
+
+
+            return super.onOptionsItemSelected(item)
+    }
+
+
+     fun addLangData() {
         val talent_test = FirstPage()
         talent_test.title = "Talent Test at Glance"
         talent_test.img_icon=R.drawable.ic_talent_test

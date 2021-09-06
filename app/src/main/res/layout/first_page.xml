@@ -7,27 +7,27 @@
     android:gravity = "center"
     >
 
-    <ImageView
-        android:id="@+id/img_icon"
-        android:layout_width="83dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:elevation="8dp"
-        android:gravity="center"
-        android:scaleType="center" />
+<!--    <ImageView-->
+<!--        android:id="@+id/img_icon2"-->
+<!--        android:layout_width="83dp"-->
+<!--        android:layout_height="95dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:elevation="8dp"-->
+<!--        android:gravity="center"-->
+<!--        android:scaleType="center" />-->
 
-    <TextView
-        android:id="@+id/title"
-        android:textColor="@color/backgroundColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="Kotlin"
-        android:textSize="26sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/title2"-->
+<!--        android:textColor="@color/backgroundColor"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:text="Kotlin"-->
+<!--        android:textSize="26sp" />-->
 
 </LinearLayout>
