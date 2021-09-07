@@ -58,5 +58,8 @@ class after_intermediate_activity : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
         })
+
+        viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout)) //will listen for scroll or page change
+
     }
 }

@@ -53,7 +53,7 @@ class after_10th_activity : AppCompatActivity() {
             }
         })
 
-
+        viewpager_10th.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tablayout_10th)) //will listen for scroll or page change
 
     }
 }
