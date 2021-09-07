@@ -17,14 +17,15 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:contentDescription="@string/college_image" />
 
     <TextView
         android:id ="@+id/college_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="Kotlin"
+        android:text="@string/kotlin"
         android:textSize="16sp"
         android:gravity="center"
         />

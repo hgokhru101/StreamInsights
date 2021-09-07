@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="15dp">
+    android:layout_margin="3.60pt"
+    app:cardCornerRadius="6.75pt">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="12dp">
+        android:padding="5.40pt">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,16 +22,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="Test Name"
+                android:layout_marginEnd="2.25pt"
+                android:text="@string/test_name"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="2.25pt" />
 
             <TextView
                 android:id="@+id/tt_test_name"
-                android:layout_width="0dp"
+                android:layout_width="0pt"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@android:color/black"
@@ -47,12 +47,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="Eligibility : "
+                android:layout_marginEnd="2.25pt"
+                android:text="@string/Eligibility"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="2.25pt" />
 
             <TextView
                 android:id="@+id/tt_eligibility"
@@ -72,12 +72,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="Syllabus : "
+                android:layout_marginEnd="2.25pt"
+                android:text="@string/syllabus"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="2.25pt" />
 
             <TextView
                 android:id="@+id/tt_syllabus"
@@ -97,12 +97,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="Website : "
+                android:layout_marginEnd="2.25pt"
+                android:text="@string/website"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="2.25pt" />
 
             <TextView
                 android:id="@+id/tt_website"
