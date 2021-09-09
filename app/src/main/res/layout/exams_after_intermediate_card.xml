@@ -18,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/testname_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -43,6 +44,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/purpose_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -68,6 +70,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/eligib_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -93,6 +96,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/app_mode_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -118,6 +122,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/source_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -144,6 +149,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/conduct_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -169,6 +175,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/app_invited_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -194,6 +201,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/notif_linear"
             android:orientation="horizontal">
 
             <TextView
@@ -219,6 +227,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/select_mode_linear"
             android:orientation="horizontal">
 
             <TextView

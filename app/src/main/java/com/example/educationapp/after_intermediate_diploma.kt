@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
@@ -60,6 +61,12 @@ class after_intermediate_diploma : Fragment() {
 //        view.findViewById<TextView>(R.id.duration).text="Duration: "+after_Intermediate_Model.data[0].streams[5].duration
         view.findViewById<TextView>(R.id.eligibility).text=" "+after_Intermediate_Model.data[0].streams[5].eligible
         view.findViewById<ExpandableListView>(R.id.elist_Int_Diploma).setAdapter(listadapter)
+
+        val eligible_linear= view.findViewById<LinearLayout>(R.id.eligiblity_linear)
+
+        if (after_Intermediate_Model.data[0].streams[5].eligible.length==0){
+            eligible_linear.setVisibility(View.GONE)
+        }
         return view
 
     }

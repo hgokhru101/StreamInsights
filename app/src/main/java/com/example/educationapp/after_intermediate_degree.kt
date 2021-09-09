@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
@@ -60,6 +61,13 @@ class after_intermediate_degree : Fragment() {
 //        view.findViewById<TextView>(R.id.duration).text="Duration: "+after_Intermediate_Model.data[0].streams[2].duration
         view.findViewById<TextView>(R.id.eligibility).text=" "+after_Intermediate_Model.data[0].streams[2].eligible
         view.findViewById<ExpandableListView>(R.id.elist_Int_Degree).setAdapter(listadapter)
+
+        val eligible_linear= view.findViewById<LinearLayout>(R.id.eligiblity_linear_deg)
+
+        if (after_Intermediate_Model.data[0].streams[2].eligible.length==0){
+            eligible_linear.setVisibility(View.GONE)
+        }
+
         return view
         // Inflate the layout for this fragment
 

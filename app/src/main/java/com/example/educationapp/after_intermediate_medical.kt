@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
@@ -63,6 +64,12 @@ class after_intermediate_medical : Fragment() {
         view.findViewById<TextView>(R.id.eligibility).text=" "+after_Intermediate_Model.data[0].streams[1].eligible
 
         view.findViewById<ExpandableListView>(R.id.elist_Int_Medical).setAdapter(listadapter)
+
+        val eligible_linear= view.findViewById<LinearLayout>(R.id.eligiblity_linear)
+
+        if (after_Intermediate_Model.data[0].streams[1].eligible.length==0){
+            eligible_linear.setVisibility(View.GONE)
+        }
 
         // Inflate the layout for this fragment
         return view
