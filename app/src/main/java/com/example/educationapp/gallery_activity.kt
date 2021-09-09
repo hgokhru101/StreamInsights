@@ -20,7 +20,6 @@ class gallery_activity : AppCompatActivity() {
         setContentView(R.layout.activity_gallery)
 
 
-
         val actionBar=supportActionBar
 
         if (actionBar!=null){
