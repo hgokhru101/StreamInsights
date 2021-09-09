@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.google.gson.Gson
+//import com.google.gson.Gson
 
 class after_10th_activity : AppCompatActivity() {
 
@@ -19,16 +19,16 @@ class after_10th_activity : AppCompatActivity() {
         }
         actionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        val pageadapter_10th: PageAdapter10th
+        val pageadapter_10th: PageAdapter10th //pageAdapter variable
 
-        var gson = Gson()
-        val main = MainActivity()
-
-        val jsonString = main.getJSONFromAssets(this,"After10th.json")
-        val after_10th_Model = gson.fromJson(
-            jsonString,
-            AfterTenListClass::class.java
-        )
+//        var gson = Gson()
+//        val main = MainActivity()
+//
+//        val jsonString = main.getJSONFromAssets(this,"After10th.json")
+//        val after_10th_Model = gson.fromJson(
+//            jsonString,
+//            AfterTenListClass::class.java
+//        )
 
         val tablayout_10th=findViewById<TabLayout>(R.id.tablayout_10th)
         val viewpager_10th=findViewById<ViewPager>(R.id.viewpager_10th)

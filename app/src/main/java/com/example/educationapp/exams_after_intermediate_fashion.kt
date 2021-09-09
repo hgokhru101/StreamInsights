@@ -42,7 +42,7 @@ class exams_after_intermediate_fashion : Fragment() {
         val recyler_view_exams=view.findViewById<RecyclerView>(R.id.recycler_view_exams)
 
         try{
-            var i:Int=0
+//            var i:Int=0
             for(i in 0 until exam_after_Intermediate_Model.data[0].streams[5].entrance_exams.size) {
                 entrance_list.add(exam_after_Intermediate_Model.data[0].streams[5].entrance_exams[i])
             }

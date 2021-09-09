@@ -29,7 +29,7 @@ class after_graduation_activity : AppCompatActivity() {
         val student_type:ArrayList<String> = ArrayList<String>()
         val stud_fut_opt_map:HashMap<String,ArrayList<String>> = HashMap()
         try{
-            var i:Int=0
+//            var i:Int=0
             for(i in 0 until After_Graduation_Model.data[0].streams.size) {
                 student_type.add(After_Graduation_Model.data[0].streams[i].student_type)
                 val future_options:ArrayList<String> = After_Graduation_Model.data[0].streams[i].future_options

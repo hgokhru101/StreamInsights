@@ -1,7 +1,7 @@
 package com.example.educationapp
 
 import com.google.gson.annotations.SerializedName
-import org.json.JSONObject
+//import org.json.JSONObject
 
 //Talent Test page Starts
 class TalentTestListClass {

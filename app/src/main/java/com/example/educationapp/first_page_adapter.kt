@@ -1,8 +1,8 @@
 package com.example.educationapp
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
+//import android.content.Context
+//import android.content.Intent
 import android.graphics.Color
 import android.view.View
 import android.view.ViewGroup

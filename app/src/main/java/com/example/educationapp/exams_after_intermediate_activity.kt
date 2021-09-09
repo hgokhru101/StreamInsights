@@ -3,7 +3,7 @@ package com.example.educationapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabItem
+//import com.google.android.material.tabs.TabItem
 import com.google.android.material.tabs.TabLayout
 import com.google.gson.Gson
 

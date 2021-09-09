@@ -8,7 +8,7 @@ class PageAdapter(fm: FragmentManager, var tabcount: Int) : FragmentPagerAdapter
     override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> return after_intermediate_engg()
-            1 -> return after_intermediate_medical()
+            1 -> return after_intermediate_medical()//will return a fragment depending on its tabcount position
             2 -> return after_intermediate_degree()
             3 -> return after_intermediate_nda()
             4 -> return after_intermediate_teach()

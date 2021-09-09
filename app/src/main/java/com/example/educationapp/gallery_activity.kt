@@ -1,7 +1,7 @@
 package com.example.educationapp
 
 import android.os.Bundle
-import android.widget.GridView
+//import android.widget.GridView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager

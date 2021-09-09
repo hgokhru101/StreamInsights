@@ -45,7 +45,7 @@ class after_intermediate_nda : Fragment() {
         val deg_cour_map:HashMap<String,ArrayList<String>> = HashMap()
 
         try{
-            var i:Int=0
+//            var i:Int=0
             for(i in 0 until after_Intermediate_Model.data[0].streams[3].course.size) {
                 degree_name.add(after_Intermediate_Model.data[0].streams[3].course[i].degree_name +
                  "   "+ after_Intermediate_Model.data[0].streams[3].course[i].course_duration)

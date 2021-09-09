@@ -34,7 +34,7 @@ class after_intermediate_medical : Fragment() {
     ): View? {
         val view= inflater.inflate(R.layout.fragment_after_intermediate_medical, container, false)
 
-        var gson = Gson()
+        val gson = Gson()
         val main = MainActivity()
         val jsonString = main.getJSONFromAssets(activity!!,"AfterIntermediate.json")
         val after_Intermediate_Model = gson.fromJson(
@@ -46,7 +46,7 @@ class after_intermediate_medical : Fragment() {
         val deg_cour_map:HashMap<String,ArrayList<String>> = HashMap()
 
         try{
-            var i:Int=0
+//            var i:Int=0
             for(i in 0 until after_Intermediate_Model.data[0].streams[1].course.size) {
                 degree_name.add(after_Intermediate_Model.data[0].streams[1].course[i].degree_name +
                         "  " + after_Intermediate_Model.data[0].streams[1].course[i].course_duration)

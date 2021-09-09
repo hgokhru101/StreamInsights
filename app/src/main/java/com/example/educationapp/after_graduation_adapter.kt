@@ -1,17 +1,17 @@
 package com.example.educationapp
 
-import android.annotation.SuppressLint
+//import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
+//import android.widget.BaseAdapter
 import android.widget.BaseExpandableListAdapter
-import android.widget.LinearLayout
-import android.widget.LinearLayout.*
+//import android.widget.LinearLayout
+//import android.widget.LinearLayout.*
 import android.widget.TextView
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+//import androidx.recyclerview.widget.LinearLayoutManager
+//import androidx.recyclerview.widget.RecyclerView
 
 class after_graduation_adapter internal constructor(private val context:Context,private val student_type: ArrayList<String>,private val stud_fut_opt_map: HashMap<String,ArrayList<String>>): BaseExpandableListAdapter() {
 

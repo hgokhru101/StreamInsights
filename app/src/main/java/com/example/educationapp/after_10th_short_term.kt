@@ -52,7 +52,7 @@ class after_10th_short_term : Fragment() {
         val course_map:HashMap<String,ArrayList<String>> = HashMap()
 
         try{
-            var i:Int=0
+//            var i:Int=0
             for(i in 0 until after_10th_Model.data[0].streams[5].course.size) {
                 course_name.add(after_10th_Model.data[0].streams[5].course[i].name)
                 val sub_course:ArrayList<String> = after_10th_Model.data[0].streams[5].course[i].sub_course
