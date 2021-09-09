@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.gson.Gson
 import java.io.IOException
@@ -67,6 +68,11 @@ class after_10th_short_term : Fragment() {
         listadapter= Course_Type_Adapter(activity!!,course_name,course_map)
 
         view.findViewById<ExpandableListView>(R.id.elist_10th_short).setAdapter(listadapter)
+
+        val duration_view=view.findViewById<LinearLayout>(R.id.duration_linear_after10th)
+        if(after_10th_Model.data[0].streams[5].duration.length==0){
+            duration_view.setVisibility(View.GONE)   //Removing view if text is empty
+        }
 
         return view
     }

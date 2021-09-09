@@ -15,6 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:id="@+id/duration_linear_after10th"
             android:layout_height="wrap_content">
 
             <TextView

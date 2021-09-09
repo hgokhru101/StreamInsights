@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -82,6 +83,11 @@ class after_10th_polytechnic : Fragment() {
 
         recycler_view_polytechnic.adapter=after10th_poly_adapter(activity!!,exam_list)
         recycler_view_polytechnic.layoutManager=LinearLayoutManager(context)
+
+        val duration_view=view.findViewById<LinearLayout>(R.id.duration_linear_after10th)
+        if(after_10th_Model.data[0].streams[1].duration.length==0){
+            duration_view.setVisibility(View.GONE)   //Removing view if text is empty
+        }
 
         return view
     }
